@@ -1,0 +1,12 @@
+# Repositórios separados (não versionar aqui)
+threat-modeler-ai-frontend/
+threat-modeler-ai-backend/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
