@@ -1,66 +1,88 @@
 # Arquitetura do Sistema
 
-## Visão Geral
+## Visao Geral
 
-O Threat Modeler AI é composto por dois serviços principais que se comunicam via REST API:
+O Threat Modeler AI e composto por quatro servicos principais que se comunicam via REST API:
 
 ```
 ┌──────────────┐         ┌──────────────┐         ┌──────────────┐
 │   Browser    │ ──────► │   Frontend   │ ──────► │   Backend    │
-│              │   HTTP  │   (Next.js)  │   REST  │   (NestJS)   │
-└──────────────┘         └──────────────┘         └──────────────┘
+│              │   HTTP  │ (React+Vite) │   REST  │   (NestJS)   │
+└──────────────┘         └──────────────┘         └──────┬───────┘
                                                          │
-                              ┌───────────────────────────┼───────────────────────────┐
-                              │                           │                           │
-                              ▼                           ▼                           ▼
-                       ┌──────────────┐           ┌──────────────┐           ┌──────────────┐
-                       │   MongoDB    │           │    Redis     │           │   Claude     │
-                       │   (dados)    │           │   (filas)    │           │    API       │
-                       └──────────────┘           └──────────────┘           └──────────────┘
+                         ┌───────────────┬───────────────┼───────────────┐
+                         │               │               │               │
+                         ▼               ▼               ▼               ▼
+                  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+                  │ YOLO Service │ │   MongoDB    │ │    Redis     │ │   Claude     │
+                  │  (FastAPI)   │ │   (dados)    │ │   (filas)    │ │    API       │
+                  └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘
 ```
 
 ## Componentes
 
-### Frontend (Next.js 14)
+### Frontend (React + Vite)
 
 **Responsabilidades:**
 - Interface de upload de imagens
-- Visualização de análises
+- Visualizacao de analises
 - Acompanhamento de progresso em tempo real (SSE)
-- Exportação de relatórios
+- Exportacao de relatorios
 
 **Tecnologias:**
-- Next.js 14 (App Router)
+- React 18 + Vite
 - TypeScript
-- TailwindCSS
+- shadcn/ui + TailwindCSS
+- Framer Motion (animacoes)
+- React Query (cache/fetching)
 - React Dropzone
 
 ### Backend (NestJS)
 
 **Responsabilidades:**
 - Receber e armazenar imagens
-- Orquestrar análise com IA
+- Orquestrar pipeline hibrido de analise (YOLO + Claude)
 - Processar filas de jobs
-- Gerar relatórios
+- Gerar relatorios
 
-**Módulos:**
-| Módulo | Responsabilidade |
+**Modulos:**
+| Modulo | Responsabilidade |
 |--------|------------------|
-| Upload | Recebe imagens e cria análise |
-| Analysis | CRUD de análises |
-| AI | Integração com Claude Vision |
-| Queue | Processamento assíncrono (BullMQ) |
-| Report | Geração de PDF/JSON/Markdown |
+| Upload | Recebe imagens e cria analise |
+| Analysis | CRUD de analises |
+| AI | Pipeline hibrido: YoloService + Claude Vision + Merge + STRIDE |
+| Queue | Processamento assincrono (BullMQ) |
+| Report | Geracao de PDF/JSON/Markdown |
+
+### YOLO Service (FastAPI)
+
+**Responsabilidades:**
+- Carregar modelo YOLO treinado (best.pt) no startup
+- Executar inferencia em imagens recebidas via HTTP
+- Retornar deteccoes com bounding boxes, classes e confianca
+- Mapear classes YOLO para tipos do backend
+
+**Tecnologias:**
+- Python 3.11
+- FastAPI + Uvicorn
+- Ultralytics (YOLOv8)
+- Pillow (processamento de imagens)
+
+**Endpoints:**
+| Metodo | Endpoint | Descricao |
+|--------|----------|-----------|
+| GET | `/health` | Health check (modelo carregado?) |
+| POST | `/predict` | Inferencia YOLO na imagem |
 
 ### Banco de Dados (MongoDB)
 
 **Collections:**
-- `analyses` - Armazena todas as análises com componentes, conexões e threats
+- `analyses` - Armazena todas as analises com componentes, conexoes, threats e detectionMeta
 
 ### Fila de Jobs (Redis + BullMQ)
 
 **Filas:**
-- `analysis-queue` - Processa análises de forma assíncrona
+- `analysis-queue` - Processa analises de forma assincrona
 
 ## Fluxo de Dados
 
@@ -69,20 +91,32 @@ O Threat Modeler AI é composto por dois serviços principais que se comunicam v
 ```
 User ──► Frontend ──► POST /api/upload ──► Backend
                                               │
-                                              ├── Salva imagem em disco
+                                              ├── Salva imagem em Base64 no MongoDB
                                               ├── Cria documento no MongoDB
                                               └── Adiciona job na fila
 ```
 
-### 2. Processamento de Análise
+### 2. Processamento de Analise (Pipeline Hibrido)
 
 ```
-Queue Worker ──► Detecta componentes (Claude Vision)
+Queue Worker (analysis.processor.ts)
       │
-      ├── Para cada componente:
-      │   └── Análise STRIDE (Claude)
+      ├── Fase 1: YOLO Service (HTTP POST /predict)
+      │   └── Retorna bounding boxes + classes + confianca (~200ms)
       │
-      └── Salva resultado no MongoDB
+      ├── Fase 2: Claude Vision (Anthropic API)
+      │   └── Retorna componentes + descricoes + conexoes (~5-10s)
+      │
+      ├── Fase 3: Merge (ai.service.ts → mergeDetections)
+      │   ├── Matching por tipo (YOLO backend_type == Claude type)
+      │   ├── Componentes confirmados por ambos → 'hybrid'
+      │   ├── Componentes so Claude → 'claude'
+      │   └── Componentes so YOLO (conf >= 8%) → 'yolo'
+      │
+      ├── Fase 4: STRIDE por componente (Claude API)
+      │   └── Para cada componente: ameacas + contramedidas
+      │
+      └── Salva resultado no MongoDB (inclui detectionMeta)
 ```
 
 ### 3. Acompanhamento de Progresso
@@ -90,12 +124,25 @@ Queue Worker ──► Detecta componentes (Claude Vision)
 ```
 Frontend ◄──── SSE ────► GET /api/analysis/:id/progress/stream
                               │
-                              └── Lê progresso do MongoDB
+                              └── Le progresso do MongoDB
 ```
 
-## Decisões de Arquitetura
+### 4. Fallback (YOLO Indisponivel)
 
-Ver [ADRs](../adr/README.md) para detalhes sobre decisões técnicas.
+```
+Queue Worker
+      │
+      ├── isAvailable() → false (YOLO fora do ar)
+      │
+      ├── Pula Fase 1 (YOLO)
+      ├── Executa Fase 2 (Claude Vision) normalmente
+      ├── Merge: todos componentes marcados como 'claude'
+      └── Fase 4 (STRIDE) normalmente
+```
+
+## Decisoes de Arquitetura
+
+Ver [ADRs](../adr/README.md) para detalhes sobre decisoes tecnicas.
 
 ## Diagramas
 

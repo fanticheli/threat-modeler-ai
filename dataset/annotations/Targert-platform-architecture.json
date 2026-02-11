@@ -1,0 +1,348 @@
+{
+  "image_id": "Targert-platform-architecture",
+  "file_name": "generic/Targert-platform-architecture.png",
+  "width": 739,
+  "height": 481,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.08,
+        0.31,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        36,
+        139,
+        81,
+        158
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IoT",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "category_name": "mobile_app",
+      "bbox": [
+        0.08,
+        0.43,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        36,
+        197,
+        81,
+        216
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Mobile",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "web_browser",
+      "bbox": [
+        0.08,
+        0.56,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        36,
+        259,
+        81,
+        278
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Browser",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.25,
+        0.45,
+        0.12,
+        0.25
+      ],
+      "bbox_pixels": [
+        140,
+        156,
+        229,
+        276
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.45,
+        0.27,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        277,
+        110,
+        387,
+        149
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spring Boot Apps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.45,
+        0.42,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        277,
+        182,
+        387,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spring Boot Apps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.45,
+        0.57,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        277,
+        254,
+        387,
+        293
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spring Boot Apps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.18,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        498,
+        67,
+        609,
+        105
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Config Server",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.3,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        498,
+        125,
+        609,
+        163
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service Registry",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.75,
+        0.43,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        498,
+        187,
+        609,
+        226
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Circuit Breaker Dashboard",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.63,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        498,
+        283,
+        609,
+        322
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spring Cloud Sleuth",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.33,
+        0.82,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        199,
+        375,
+        288,
+        413
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metrics Store",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.45,
+        0.82,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        288,
+        375,
+        376,
+        413
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Databases",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.57,
+        0.82,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        376,
+        375,
+        465,
+        413
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Brokers",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

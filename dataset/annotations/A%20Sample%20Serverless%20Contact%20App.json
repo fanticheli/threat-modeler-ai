@@ -1,0 +1,200 @@
+{
+  "image_id": "A%20Sample%20Serverless%20Contact%20App",
+  "file_name": "aws/A%20Sample%20Serverless%20Contact%20App.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.18,
+        0.82,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        230,
+        842,
+        460,
+        928
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Front End UI (Javascript/HTML)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.45,
+        0.62,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        787,
+        615,
+        940,
+        723
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Static Admin App",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.25,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        403,
+        518,
+        556,
+        604
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.55,
+        0.35,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        960,
+        334,
+        1152,
+        421
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda Function 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.85,
+        0.4,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1536,
+        388,
+        1728,
+        475
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda Function 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.75,
+        0.18,
+        0.1,
+        0.12
+      ],
+      "bbox_pixels": [
+        1344,
+        129,
+        1536,
+        259
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DynamoDB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.75,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1363,
+        518,
+        1516,
+        604
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Gateway",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "image_id": "kubernetes_kong_api_gateway_eks",
+  "file_name": "aws/kubernetes_kong_api_gateway_eks.png",
+  "width": 2071,
+  "height": 1893,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.42,
+        0.15,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        786,
+        189,
+        952,
+        378
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "LetsEncrypt Certificate Authority",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.56,
+        0.15,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1076,
+        189,
+        1242,
+        378
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GitHub",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.95,
+        0.15,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1884,
+        189,
+        2050,
+        378
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.21,
+        0.4,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        352,
+        681,
+        517,
+        832
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "EKS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.42,
+        0.37,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        786,
+        624,
+        952,
+        776
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cert-Manager",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.56,
+        0.37,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1076,
+        624,
+        1242,
+        776
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ArgoCD",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.49,
+        0.55,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        931,
+        965,
+        1097,
+        1116
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes Ingress",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.9,
+        0.37,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1781,
+        624,
+        1946,
+        776
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ELB Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.9,
+        0.57,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1781,
+        1003,
+        1946,
+        1154
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Route53 DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.49,
+        0.74,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        931,
+        1325,
+        1097,
+        1476
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kong API Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.17,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        289,
+        1268,
+        414,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.27,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        497,
+        1268,
+        621,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.37,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        704,
+        1268,
+        828,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.27,
+        0.85,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        476,
+        1552,
+        642,
+        1665
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 1 Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.57,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1118,
+        1268,
+        1242,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.67,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1325,
+        1268,
+        1449,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.77,
+        0.7,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1532,
+        1268,
+        1656,
+        1381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.67,
+        0.85,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1304,
+        1552,
+        1470,
+        1665
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 2 Service",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 5,
+      "protocol": "ACME",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 6,
+      "protocol": "GitOps",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 8,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": "DNS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 7,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": "SSL",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": "k8s",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 10,
+      "protocol": "Ingress",
+      "bidirectional": false
+    },
+    {
+      "from_id": 15,
+      "to_id": 14,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 16,
+      "to_id": 14,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 17,
+      "to_id": 14,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 15,
+      "to_id": 18,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 16,
+      "to_id": 18,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 17,
+      "to_id": 18,
+      "protocol": "TCP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

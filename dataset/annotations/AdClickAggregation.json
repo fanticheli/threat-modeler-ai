@@ -1,0 +1,374 @@
+{
+  "image_id": "AdClickAggregation",
+  "file_name": "generic/AdClickAggregation.png",
+  "width": 1081,
+  "height": 369,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.95,
+        0.45,
+        0.05,
+        0.08
+      ],
+      "bbox_pixels": [
+        999,
+        151,
+        1053,
+        180
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.08,
+        0.45,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        21,
+        151,
+        151,
+        180
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Watcher",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.25,
+        0.45,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        227,
+        154,
+        313,
+        177
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.4,
+        0.45,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        367,
+        151,
+        497,
+        180
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Data Aggregation",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.58,
+        0.45,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        583,
+        154,
+        670,
+        177
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.73,
+        0.45,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        724,
+        151,
+        853,
+        180
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Database Writer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.95,
+        0.55,
+        0.15,
+        0.1
+      ],
+      "bbox_pixels": [
+        945,
+        184,
+        1108,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Aggregated Database",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.95,
+        0.35,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        945,
+        114,
+        1108,
+        143
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Query Dashboard",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.75,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        205,
+        261,
+        335,
+        291
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Database Writer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.25,
+        0.95,
+        0.15,
+        0.1
+      ],
+      "bbox_pixels": [
+        189,
+        332,
+        351,
+        369
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Raw Database",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.75,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        459,
+        261,
+        621,
+        291
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Data Aggregation (Recalculation Only)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.9,
+        0.12,
+        0.06
+      ],
+      "bbox_pixels": [
+        475,
+        321,
+        605,
+        343
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Recalculation",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        1.05,
+        0.12,
+        0.06
+      ],
+      "bbox_pixels": [
+        475,
+        376,
+        605,
+        398
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Reconciliation",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 1,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 13,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

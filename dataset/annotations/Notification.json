@@ -1,0 +1,386 @@
+{
+  "image_id": "Notification",
+  "file_name": "generic/Notification.png",
+  "width": 762,
+  "height": 662,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.05,
+        0.4,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        0,
+        238,
+        76,
+        291
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.22,
+        0.4,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        121,
+        225,
+        213,
+        304
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Notification Server",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.38,
+        0.32,
+        0.12,
+        0.06
+      ],
+      "bbox_pixels": [
+        243,
+        191,
+        335,
+        231
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Authentication",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.38,
+        0.42,
+        0.12,
+        0.06
+      ],
+      "bbox_pixels": [
+        243,
+        258,
+        335,
+        297
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "RateLimit",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.38,
+        0.7,
+        0.1,
+        0.12
+      ],
+      "bbox_pixels": [
+        251,
+        423,
+        327,
+        503
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CACHE",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.38,
+        0.92,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        232,
+        582,
+        346,
+        635
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "deviceInfo/userInfo",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.55,
+        0.4,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        388,
+        238,
+        449,
+        291
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IOS PN",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.7,
+        0.4,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        487,
+        225,
+        579,
+        304
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Workers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.85,
+        0.4,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        617,
+        238,
+        678,
+        291
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "APNs",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 2,
+      "category_name": "mobile_app",
+      "bbox": [
+        0.95,
+        0.4,
+        0.06,
+        0.1
+      ],
+      "bbox_pixels": [
+        701,
+        231,
+        746,
+        297
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IOS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.7,
+        0.62,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        476,
+        383,
+        590,
+        436
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Notification Template",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.85,
+        0.62,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        601,
+        383,
+        693,
+        436
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Notification Logs",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.7,
+        0.15,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        495,
+        72,
+        571,
+        125
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Analytics",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

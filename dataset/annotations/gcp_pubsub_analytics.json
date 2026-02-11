@@ -1,0 +1,318 @@
+{
+  "image_id": "gcp_pubsub_analytics",
+  "file_name": "gcp/gcp_pubsub_analytics.png",
+  "width": 1409,
+  "height": 1537,
+  "provider": "gcp",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.14,
+        0.37,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        140,
+        476,
+        253,
+        660
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IoT Core1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.14,
+        0.56,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        140,
+        768,
+        253,
+        952
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IoT Core2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.14,
+        0.75,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        140,
+        1060,
+        253,
+        1244
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "IoT Core3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.32,
+        0.56,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        394,
+        799,
+        507,
+        922
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GCP Pub/Sub",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.47,
+        0.56,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        605,
+        768,
+        718,
+        952
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Data Flow",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.64,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        845,
+        399,
+        958,
+        522
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AppEngine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.8,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1070,
+        399,
+        1183,
+        522
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "BigTable",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.64,
+        0.47,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        845,
+        660,
+        958,
+        783
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Functions",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.8,
+        0.47,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1070,
+        660,
+        1183,
+        783
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AppEngine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.64,
+        0.67,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        845,
+        937,
+        958,
+        1122
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "BigQuery",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.64,
+        0.87,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        845,
+        1275,
+        958,
+        1398
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GCS Blob Storage",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

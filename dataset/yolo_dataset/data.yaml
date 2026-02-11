@@ -1,0 +1,40 @@
+# Architecture Components Detection Dataset
+path: /home/fanticheli/projetos/pessoal/fiap/POS_IA_DEV/FIAP-IADT-MODULO5/threat-modeler-ai/dataset/yolo_dataset
+train: train/images
+val: val/images
+test: test/images
+
+# Classes
+names:
+  0: user
+  1: web_browser
+  2: mobile_app
+  3: api_gateway
+  4: load_balancer
+  5: web_server
+  6: app_server
+  7: microservice
+  8: container
+  9: kubernetes
+  10: lambda_function
+  11: database_sql
+  12: database_nosql
+  13: cache
+  14: queue
+  15: storage_object
+  16: storage_block
+  17: cdn
+  18: firewall
+  19: waf
+  20: vpc
+  21: subnet
+  22: iam
+  23: kms
+  24: secrets_manager
+  25: monitoring
+  26: logging
+  27: external_service
+  28: dns
+  29: email_service
+
+nc: 30

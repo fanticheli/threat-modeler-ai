@@ -1,0 +1,428 @@
+{
+  "image_id": "ChatSystem",
+  "file_name": "generic/ChatSystem.png",
+  "width": 911,
+  "height": 641,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.18,
+        0.15,
+        0.25,
+        0.12
+      ],
+      "bbox_pixels": [
+        50,
+        57,
+        277,
+        134
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "One to One Chat",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.54,
+        0.15,
+        0.25,
+        0.12
+      ],
+      "bbox_pixels": [
+        378,
+        57,
+        605,
+        134
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "One to One Chat",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.83,
+        0.15,
+        0.25,
+        0.12
+      ],
+      "bbox_pixels": [
+        642,
+        57,
+        870,
+        134
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "One to One Chat",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.33,
+        0.3,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        264,
+        173,
+        337,
+        211
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.08,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        36,
+        249,
+        109,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ID Generator",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.25,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        191,
+        249,
+        264,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Chat Server 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.54,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        455,
+        249,
+        528,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Chat Server 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.83,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        719,
+        249,
+        792,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Chat Server 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.12,
+        0.7,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        81,
+        423,
+        136,
+        474
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CS1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.2,
+        0.7,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        154,
+        423,
+        209,
+        474
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CS2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.28,
+        0.7,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        227,
+        423,
+        282,
+        474
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CS3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.2,
+        0.82,
+        0.12,
+        0.04
+      ],
+      "bbox_pixels": [
+        127,
+        512,
+        236,
+        538
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service Discovery",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.42,
+        0.58,
+        0.12,
+        0.04
+      ],
+      "bbox_pixels": [
+        327,
+        358,
+        437,
+        384
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.42,
+        0.65,
+        0.12,
+        0.04
+      ],
+      "bbox_pixels": [
+        327,
+        403,
+        437,
+        429
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.5,
+        0.85,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        409,
+        519,
+        501,
+        570
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Key Value Store",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.75,
+        0.85,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        637,
+        519,
+        728,
+        570
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Push Notification Server",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 7,
+      "protocol": "ws",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 8,
+      "protocol": "ws",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 14,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 14,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 14,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 15,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 16,
+      "protocol": "offline",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

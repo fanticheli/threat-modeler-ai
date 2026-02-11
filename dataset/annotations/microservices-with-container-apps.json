@@ -1,0 +1,400 @@
+{
+  "image_id": "microservices-with-container-apps",
+  "file_name": "azure/microservices-with-container-apps.png",
+  "width": 1200,
+  "height": 927,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.1,
+        0.5,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        72,
+        426,
+        168,
+        500
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "HTTP traffic",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.45,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        228,
+        370,
+        372,
+        463
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Ingestion service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.4,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        528,
+        315,
+        672,
+        426
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Workflow service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.3,
+        0.65,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        288,
+        556,
+        432,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Package service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.65,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        528,
+        556,
+        672,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Drone scheduler service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.7,
+        0.65,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        768,
+        556,
+        912,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Delivery service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.5,
+        0.15,
+        0.15,
+        0.12
+      ],
+      "bbox_pixels": [
+        510,
+        83,
+        690,
+        194
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Service Bus",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.25,
+        0.85,
+        0.15,
+        0.12
+      ],
+      "bbox_pixels": [
+        210,
+        732,
+        390,
+        843
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure DocumentDB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.5,
+        0.85,
+        0.15,
+        0.12
+      ],
+      "bbox_pixels": [
+        510,
+        732,
+        690,
+        843
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Cosmos DB for NoSQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.7,
+        0.85,
+        0.15,
+        0.12
+      ],
+      "bbox_pixels": [
+        750,
+        732,
+        930,
+        843
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Managed Redis",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.85,
+        0.25,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        948,
+        185,
+        1092,
+        278
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Insights",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.85,
+        0.4,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        948,
+        324,
+        1092,
+        417
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics workspace",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 24,
+      "category_name": "secrets_manager",
+      "bbox": [
+        0.85,
+        0.55,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        948,
+        463,
+        1092,
+        556
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.85,
+        0.7,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        948,
+        602,
+        1092,
+        695
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Container Registry",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.85,
+        0.85,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        948,
+        741,
+        1092,
+        834
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

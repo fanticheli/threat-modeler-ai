@@ -1,0 +1,374 @@
+{
+  "image_id": "aws_serverless_image_processing",
+  "file_name": "aws/aws_serverless_image_processing.png",
+  "width": 1987,
+  "height": 1549,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.13,
+        0.63,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        198,
+        913,
+        317,
+        1037
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.28,
+        0.63,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        476,
+        913,
+        635,
+        1037
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS Cognito",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.28,
+        0.78,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        476,
+        1146,
+        635,
+        1270
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS S3 Bucket",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.43,
+        0.69,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        774,
+        1006,
+        933,
+        1130
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Start workflow",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.56,
+        0.63,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1033,
+        913,
+        1192,
+        1037
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS AppSync",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.67,
+        0.63,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1251,
+        913,
+        1410,
+        1037
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS Resolver",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.8,
+        0.53,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1510,
+        759,
+        1669,
+        882
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS Step Function",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.93,
+        0.21,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1768,
+        263,
+        1927,
+        387
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Object / Scene detection",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        1.06,
+        0.21,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        2026,
+        263,
+        2185,
+        387
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS Rekognition",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.93,
+        0.36,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1768,
+        495,
+        1927,
+        619
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Extract metadata",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.93,
+        0.5,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1768,
+        712,
+        1927,
+        836
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persist Metadata",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        1.06,
+        0.55,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        2026,
+        789,
+        2185,
+        913
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AWS DynamoDB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.93,
+        0.7,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1768,
+        1022,
+        1927,
+        1146
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Create thumbnail",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

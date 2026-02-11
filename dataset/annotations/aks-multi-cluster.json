@@ -1,0 +1,538 @@
+{
+  "image_id": "aks-multi-cluster",
+  "file_name": "azure/aks-multi-cluster.png",
+  "width": 1200,
+  "height": 776,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.08,
+        0.17,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        24,
+        100,
+        168,
+        162
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics (regional)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.2,
+        0.17,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        192,
+        108,
+        288,
+        155
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Bastion",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.35,
+        0.17,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        372,
+        108,
+        468,
+        155
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.55,
+        0.17,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        600,
+        100,
+        720,
+        162
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.7,
+        0.17,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        792,
+        108,
+        888,
+        155
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.85,
+        0.17,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        972,
+        108,
+        1068,
+        155
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.95,
+        0.17,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1104,
+        100,
+        1176,
+        162
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.95,
+        0.28,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        194,
+        1188,
+        240
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Container Registry replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.08,
+        0.42,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        24,
+        294,
+        168,
+        356
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics (regional)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.2,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        192,
+        302,
+        288,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Bastion",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.35,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        372,
+        302,
+        468,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.55,
+        0.42,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        600,
+        294,
+        720,
+        356
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.7,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        792,
+        302,
+        888,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.85,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        972,
+        302,
+        1068,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.95,
+        0.42,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1104,
+        294,
+        1176,
+        356
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.95,
+        0.53,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        388,
+        1188,
+        434
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Container Registry replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.55,
+        0.67,
+        0.15,
+        0.1
+      ],
+      "bbox_pixels": [
+        570,
+        481,
+        750,
+        558
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft-managed Kubernetes services (Fleet hub cluster)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        1.1,
+        0.17,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1260,
+        100,
+        1380,
+        162
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Container Registry",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 17,
+      "category_name": "cdn",
+      "bbox": [
+        1.1,
+        0.32,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1260,
+        217,
+        1380,
+        279
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Front Door",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        1.1,
+        0.47,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        1248,
+        325,
+        1392,
+        403
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Kubernetes Fleet Manager",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        1.1,
+        0.62,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1260,
+        450,
+        1380,
+        512
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 12,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 13,
+      "to_id": 14,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 14,
+      "to_id": 15,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 15,
+      "to_id": 16,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 14,
+      "to_id": 19,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 19,
+      "to_id": 18,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 17,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 17,
+      "to_id": 21,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 20,
+      "to_id": 19,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

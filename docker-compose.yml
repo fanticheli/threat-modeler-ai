@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # ============================================
+  # Microsservico YOLO - Modelo treinado (Python)
+  # ============================================
+  yolo-service:
+    build: ./yolo-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./yolo-service/model:/app/model
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # ============================================
+  # MongoDB - Banco de dados
+  # ============================================
+  mongodb:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    restart: unless-stopped
+
+  # ============================================
+  # Redis - Fila de processamento
+  # ============================================
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # ============================================
+  # Backend NestJS - API REST
+  # ============================================
+  backend:
+    build: ../threat-modeler-ai-backend
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongodb
+      - redis
+      - yolo-service
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MONGODB_URI=mongodb://mongodb:27017/threat-modeler
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - YOLO_SERVICE_URL=http://yolo-service:8000
+      - YOLO_TIMEOUT_MS=30000
+      - PORT=3001
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:

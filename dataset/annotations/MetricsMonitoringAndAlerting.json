@@ -1,0 +1,346 @@
+{
+  "image_id": "MetricsMonitoringAndAlerting",
+  "file_name": "generic/MetricsMonitoringAndAlerting.png",
+  "width": 1007,
+  "height": 362,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.06,
+        0.5,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        0,
+        166,
+        120,
+        195
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metric Source",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.22,
+        0.5,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        151,
+        166,
+        292,
+        195
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metric Collector",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.36,
+        0.58,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        322,
+        202,
+        402,
+        217
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.5,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        453,
+        166,
+        553,
+        195
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Consumers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.64,
+        0.63,
+        0.08,
+        0.16
+      ],
+      "bbox_pixels": [
+        604,
+        199,
+        684,
+        257
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Time Series DB (Prometheus/InfluxDB)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.78,
+        0.5,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        725,
+        166,
+        845,
+        195
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Query Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.82,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        745,
+        282,
+        825,
+        311
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CACHE",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.78,
+        0.18,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        725,
+        50,
+        845,
+        79
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Alerting System",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.96,
+        0.08,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        946,
+        21,
+        986,
+        36
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 29,
+      "category_name": "email_service",
+      "bbox": [
+        0.96,
+        0.24,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        946,
+        79,
+        986,
+        94
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Mail",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.96,
+        0.4,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        946,
+        137,
+        986,
+        152
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PagerDuty",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.96,
+        0.64,
+        0.04,
+        0.08
+      ],
+      "bbox_pixels": [
+        946,
+        217,
+        986,
+        246
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Visualization System (Grafana)",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

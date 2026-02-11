@@ -8,11 +8,8 @@ Registro das decisões de arquitetura do projeto.
 |-----|--------|--------|------|
 | [001](./001-multi-repo-structure.md) | Estrutura Multi-Repo | Aceito | 2024-02 |
 | [002](./002-nestjs-backend.md) | NestJS para Backend | Aceito | 2024-02 |
-| [003](./003-nextjs-frontend.md) | Next.js para Frontend | Aceito | 2024-02 |
 | [004](./004-async-processing.md) | Processamento Assíncrono com BullMQ | Aceito | 2024-02 |
 | [005](./005-claude-vision.md) | Claude Vision para Análise de Imagens | Aceito | 2024-02 |
-| [006](./006-mongodb-database.md) | MongoDB como Banco de Dados | Aceito | 2024-02 |
-| [007](./007-multi-language-support.md) | Suporte Multi-idioma | Aceito | 2024-02 |
 
 ## Template ADR
 

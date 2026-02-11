@@ -1,0 +1,662 @@
+{
+  "image_id": "LucidChart_GCP_diagram",
+  "file_name": "gcp/LucidChart_GCP_diagram.png",
+  "width": 1874,
+  "height": 1360,
+  "provider": "gcp",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.08,
+        0.56,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        74,
+        693,
+        224,
+        829
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internet Users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.25,
+        0.5,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        393,
+        639,
+        543,
+        720
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Firewall Rules",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.37,
+        0.5,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        618,
+        639,
+        768,
+        720
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Load Balancing",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.62,
+        0.45,
+        0.75,
+        0.55
+      ],
+      "bbox_pixels": [
+        459,
+        237,
+        1864,
+        986
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Private Cloud",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.65,
+        0.35,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1161,
+        435,
+        1274,
+        516
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Functions",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.76,
+        0.35,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1368,
+        435,
+        1480,
+        516
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.65,
+        0.47,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1161,
+        598,
+        1274,
+        680
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.76,
+        0.47,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1368,
+        598,
+        1480,
+        680
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Compute Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.89,
+        0.35,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1611,
+        435,
+        1724,
+        516
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Functions",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        1.0,
+        0.35,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1817,
+        435,
+        1930,
+        516
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.89,
+        0.47,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1611,
+        598,
+        1724,
+        680
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        1.0,
+        0.47,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1817,
+        598,
+        1930,
+        680
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Compute Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.65,
+        0.61,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1161,
+        788,
+        1274,
+        870
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Functions",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.76,
+        0.61,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1368,
+        788,
+        1480,
+        870
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.65,
+        0.73,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1161,
+        951,
+        1274,
+        1033
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.76,
+        0.73,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1368,
+        951,
+        1480,
+        1033
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Compute Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.89,
+        0.61,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1611,
+        788,
+        1724,
+        870
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Functions",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        1.0,
+        0.61,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1817,
+        788,
+        1930,
+        870
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.89,
+        0.73,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1611,
+        951,
+        1724,
+        1033
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kubernetes Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        1.0,
+        0.73,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1817,
+        951,
+        1930,
+        1033
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Compute Engine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.65,
+        0.89,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1143,
+        1169,
+        1293,
+        1251
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Container Registry",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 22,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.81,
+        0.89,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1442,
+        1169,
+        1592,
+        1251
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 23,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        1.19,
+        0.13,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        2155,
+        136,
+        2305,
+        217
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Pub/Sub",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 24,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        1.19,
+        0.29,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        2155,
+        340,
+        2305,
+        448
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Memorystore (managed Redis for sessions)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 25,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        1.19,
+        0.45,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        2155,
+        571,
+        2305,
+        652
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Datastore",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 26,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        1.19,
+        0.58,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        2155,
+        748,
+        2305,
+        829
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud SQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 27,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        1.19,
+        0.75,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        2155,
+        979,
+        2305,
+        1060
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "BigQuery",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 28,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        1.19,
+        0.86,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        2155,
+        1128,
+        2305,
+        1210
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Stackdriver",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 19,
+      "to_id": 21,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 20,
+      "to_id": 24,
+      "protocol": "TCP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

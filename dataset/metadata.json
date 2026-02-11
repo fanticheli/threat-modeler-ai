@@ -1,0 +1,483 @@
+{
+  "version": "2.0.0",
+  "created": "2026-02-06",
+  "description": "Dataset de diagramas de arquitetura de software para detecção de componentes",
+  "sources": [
+    "GitHub: arpitbhardwaj/architecture-diagrams (MIT License)",
+    "Azure Architecture Center (Microsoft Learn)",
+    "Hackathon FIAP - imagens de teste"
+  ],
+  "images": [
+    {
+      "file_name": "aws/A%20Sample%20Serverless%20Contact%20App.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "672030240528774f6312e3caee9e7bc9"
+    },
+    {
+      "file_name": "aws/AWS%20Backups.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "b3402addf880f07c05234aa65583748d"
+    },
+    {
+      "file_name": "aws/Analytics%20Serverless%20Data%20Back%20End.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "6946950783171c5d286358ee140854dc"
+    },
+    {
+      "file_name": "aws/EC2%20State%20Change%20Slack.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "c270ef21324b4a5f7b7410d9a455e070"
+    },
+    {
+      "file_name": "aws/Teem%20Ops%20Serverless%20Back%20End.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "9a7ed1e49553b5af59be05b8412a6773"
+    },
+    {
+      "file_name": "aws/Teem.png",
+      "provider": "aws",
+      "width": 1920,
+      "height": 1080,
+      "hash": "5b7ccdbdd5a04bdb2ce79e484de09367"
+    },
+    {
+      "file_name": "aws/advanced_web_services_open_source.png",
+      "provider": "aws",
+      "width": 1665,
+      "height": 1156,
+      "hash": "cb9f39785d8e5774a75f855d0d500348"
+    },
+    {
+      "file_name": "aws/aws.png",
+      "provider": "aws",
+      "width": 512,
+      "height": 256,
+      "hash": "a53111859366ac49a0b4509d06767207"
+    },
+    {
+      "file_name": "aws/aws_clustered_web_services.png",
+      "provider": "aws",
+      "width": 1367,
+      "height": 1152,
+      "hash": "d7bf3a786cda666428548fd21142b45f"
+    },
+    {
+      "file_name": "aws/aws_event_processing.png",
+      "provider": "aws",
+      "width": 1345,
+      "height": 1201,
+      "hash": "b7262350b99a14c3af57e97afeae8713"
+    },
+    {
+      "file_name": "aws/aws_load_balanced_web_farm.png",
+      "provider": "aws",
+      "width": 1287,
+      "height": 1403,
+      "hash": "17c43236ef82c450c9b983361aa617d3"
+    },
+    {
+      "file_name": "aws/aws_serverless_image_processing.png",
+      "provider": "aws",
+      "width": 1987,
+      "height": 1549,
+      "hash": "14f09ef2d831099b2f5aafac835242b5"
+    },
+    {
+      "file_name": "aws/aws_web_service_db_cluster.png",
+      "provider": "aws",
+      "width": 1160,
+      "height": 912,
+      "hash": "e0ceee85a7ec887c1d96d4d4a7d91dd2"
+    },
+    {
+      "file_name": "aws/aws_web_traffic_classic.png",
+      "provider": "aws",
+      "width": 1209,
+      "height": 1445,
+      "hash": "bb6440262496fe7e0a3d3a01153e8d5b"
+    },
+    {
+      "file_name": "aws/kubernetes_kong_api_gateway_eks.png",
+      "provider": "aws",
+      "width": 2071,
+      "height": 1893,
+      "hash": "6afd5cd79aba1b2682335b550f6b7b03"
+    },
+    {
+      "file_name": "aws/multi_dc_gslb_f5_java_stack.png",
+      "provider": "aws",
+      "width": 1995,
+      "height": 2186,
+      "hash": "5509e54f6290b20e42630b2a0ec4a432"
+    },
+    {
+      "file_name": "azure/aks-ingress-flow.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 564,
+      "hash": "a1d1ba50e31bc354c11aa264cd2dee34"
+    },
+    {
+      "file_name": "azure/aks-multi-cluster.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 776,
+      "hash": "3175d756738eda944bd2a2c776f6806a"
+    },
+    {
+      "file_name": "azure/app-service-environment-multisite.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 927,
+      "hash": "45eaa370b3d20ab990e80376aab68163"
+    },
+    {
+      "file_name": "azure/app-service-environment.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 928,
+      "hash": "e5e99f12f2355b1e8cdd754f35538bf6"
+    },
+    {
+      "file_name": "azure/azure-data-factory-baseline.png",
+      "provider": "azure",
+      "width": 1665,
+      "height": 1110,
+      "hash": "4418f793697c73a5f54f9314824e16a9"
+    },
+    {
+      "file_name": "azure/azure-data-factory-hardened-network.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 817,
+      "hash": "63dbeba305faa77f718940018344456f"
+    },
+    {
+      "file_name": "azure/azure_web_app.png",
+      "provider": "azure",
+      "width": 988,
+      "height": 456,
+      "hash": "728ce751f7e8272d4c62ec95cc6f7dcd"
+    },
+    {
+      "file_name": "azure/baseline-app-service-architecture.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 726,
+      "hash": "c5fd58de5ac8e9542d72391ae01db664"
+    },
+    {
+      "file_name": "azure/baseline-app-service-network-architecture.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 801,
+      "hash": "baee0c7fb1fcaaa5b6cc48c436511f04"
+    },
+    {
+      "file_name": "azure/baseline-microsoft-foundry-network-flow.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 631,
+      "hash": "fc0121cf71e2c94b3d71577140dc7730"
+    },
+    {
+      "file_name": "azure/baseline-microsoft-foundry.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 631,
+      "hash": "28481b42a2431e9b0af4f337ef0e3ff2"
+    },
+    {
+      "file_name": "azure/basic-app-service-architecture-flow.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 811,
+      "hash": "a96eb95a3520d7aaf9e9fc8fb76a472a"
+    },
+    {
+      "file_name": "azure/hub-and-spoke.png",
+      "provider": "azure",
+      "width": 960,
+      "height": 583,
+      "hash": "4af03df87f7b6c00063dc6bc692ea732"
+    },
+    {
+      "file_name": "azure/hub-spoke.png",
+      "provider": "azure",
+      "width": 1093,
+      "height": 682,
+      "hash": "83bbf8f71f2bf44e14438501a79939c6"
+    },
+    {
+      "file_name": "azure/microservices-architecture.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 614,
+      "hash": "2d2deb1c853650d77f793be7418de581"
+    },
+    {
+      "file_name": "azure/microservices-with-container-apps.png",
+      "provider": "azure",
+      "width": 1200,
+      "height": 927,
+      "hash": "93dfffba60b1737322cf5614d6946fc0"
+    },
+    {
+      "file_name": "azure/spoke-spoke-avnm.png",
+      "provider": "azure",
+      "width": 3756,
+      "height": 1180,
+      "hash": "db1e67e16c2bd3bcc23fc43a38c3c9ab"
+    },
+    {
+      "file_name": "azure/spoke-spoke-routing.png",
+      "provider": "azure",
+      "width": 2446,
+      "height": 462,
+      "hash": "15cc6974730ac92d59cde7eac8480669"
+    },
+    {
+      "file_name": "gcp/LucidChart_GCP_diagram.png",
+      "provider": "gcp",
+      "width": 1874,
+      "height": 1360,
+      "hash": "08478a4e4e638d88710541414794073f"
+    },
+    {
+      "file_name": "gcp/gcp_cloudflare_web_architecture_gke.png",
+      "provider": "gcp",
+      "width": 1565,
+      "height": 2421,
+      "hash": "b2e2492f2ee6131e0cae73378f8966c0"
+    },
+    {
+      "file_name": "gcp/gcp_pubsub_analytics.png",
+      "provider": "gcp",
+      "width": 1409,
+      "height": 1537,
+      "hash": "c0e4f22f4ba08a29aaabcc3284e96310"
+    },
+    {
+      "file_name": "gcp/kubernetes_deployment_hpa_ingress.png",
+      "provider": "gcp",
+      "width": 1552,
+      "height": 1080,
+      "hash": "18063882309e18a0bc91990c5fa459f7"
+    },
+    {
+      "file_name": "gcp/kubernetes_stateful_architecture.png",
+      "provider": "gcp",
+      "width": 1388,
+      "height": 1267,
+      "hash": "880af50fdc308d0997ce50cec9d2d626"
+    },
+    {
+      "file_name": "gcp/kubernetes_traefik_ingress_gke.png",
+      "provider": "gcp",
+      "width": 1939,
+      "height": 1532,
+      "hash": "09e1ba8d0152014190c4ef0161d9dcd7"
+    },
+    {
+      "file_name": "generic/4edXG0T.png",
+      "provider": "generic",
+      "width": 936,
+      "height": 1360,
+      "hash": "aa0cac4f358b9ed53835c603375e44d4"
+    },
+    {
+      "file_name": "generic/4j99mhe.png",
+      "provider": "generic",
+      "width": 542,
+      "height": 1096,
+      "hash": "e96790ad7f8430205226c8884039e432"
+    },
+    {
+      "file_name": "generic/AdClickAggregation.png",
+      "provider": "generic",
+      "width": 1081,
+      "height": 369,
+      "hash": "90a307a60fdf9c205c1fe3dd20363883"
+    },
+    {
+      "file_name": "generic/AutoCompleteSystem.png",
+      "provider": "generic",
+      "width": 791,
+      "height": 401,
+      "hash": "b31aa2e7d27b4d9db75cd6516ef9bb4a"
+    },
+    {
+      "file_name": "generic/ChatSystem.png",
+      "provider": "generic",
+      "width": 911,
+      "height": 641,
+      "hash": "f39adc8d19656c3875b5c21be8f02f99"
+    },
+    {
+      "file_name": "generic/CloudStorage.png",
+      "provider": "generic",
+      "width": 779,
+      "height": 740,
+      "hash": "5134130aacc3317cb3a13a78a597601b"
+    },
+    {
+      "file_name": "generic/MessageQueue.png",
+      "provider": "generic",
+      "width": 1113,
+      "height": 561,
+      "hash": "14d79f68ae3ff85b9324dc243cfd100c"
+    },
+    {
+      "file_name": "generic/MetricsMonitoringAndAlerting.png",
+      "provider": "generic",
+      "width": 1007,
+      "height": 362,
+      "hash": "7ca978fcc37df4a4e274959842615a5a"
+    },
+    {
+      "file_name": "generic/MzExP06.png",
+      "provider": "generic",
+      "width": 924,
+      "height": 1376,
+      "hash": "31df1c005753a9e23e8a651ef4d6ddb2"
+    },
+    {
+      "file_name": "generic/NewsFeed.png",
+      "provider": "generic",
+      "width": 642,
+      "height": 761,
+      "hash": "bdbaa51b25c27597918b3c3b37cd7f8f"
+    },
+    {
+      "file_name": "generic/Notification.png",
+      "provider": "generic",
+      "width": 762,
+      "height": 662,
+      "hash": "02b1076ccc95aaf325d48ef3d988b351"
+    },
+    {
+      "file_name": "generic/OfVllex.png",
+      "provider": "generic",
+      "width": 1128,
+      "height": 906,
+      "hash": "5223751f86f5ee7e3938e092e5081b41"
+    },
+    {
+      "file_name": "generic/Proximity.png",
+      "provider": "generic",
+      "width": 521,
+      "height": 711,
+      "hash": "c1ba35175646582db52b5f558673346f"
+    },
+    {
+      "file_name": "generic/RateLimiter.png",
+      "provider": "generic",
+      "width": 721,
+      "height": 676,
+      "hash": "02fb2c3bfcb06f935c353d11a16fe925"
+    },
+    {
+      "file_name": "generic/ServiceMesh.png",
+      "provider": "generic",
+      "width": 900,
+      "height": 641,
+      "hash": "95d32e8c4360fb463f547ed13bc56960"
+    },
+    {
+      "file_name": "generic/Targert-platform-architecture.png",
+      "provider": "generic",
+      "width": 739,
+      "height": 481,
+      "hash": "4dd4ea934287d89bb10fb0c7ac386dad"
+    },
+    {
+      "file_name": "generic/V5q57vU.png",
+      "provider": "generic",
+      "width": 1308,
+      "height": 1332,
+      "hash": "b2775ebc5a98096a7234542351e0a4c6"
+    },
+    {
+      "file_name": "generic/VideoStreaming.png",
+      "provider": "generic",
+      "width": 761,
+      "height": 780,
+      "hash": "a09ba9ab7cdaef3ed309dad53aa82a02"
+    },
+    {
+      "file_name": "generic/b4YtAEN.png",
+      "provider": "generic",
+      "width": 2926,
+      "height": 2560,
+      "hash": "21ab4da85889b0dd34c1a7f94f2dd3f1"
+    },
+    {
+      "file_name": "generic/bWxPtQA.png",
+      "provider": "generic",
+      "width": 1078,
+      "height": 1304,
+      "hash": "f1cb31b48ff34e3723a6ad7524227125"
+    },
+    {
+      "file_name": "generic/cdCv5g7.png",
+      "provider": "generic",
+      "width": 774,
+      "height": 1042,
+      "hash": "91f79885f8f4ef4232a271afae299709"
+    },
+    {
+      "file_name": "generic/hackathon_page3.png",
+      "provider": "generic",
+      "width": 1193,
+      "height": 1685,
+      "hash": "69ff635a30721221f19cb9feadf7a3aa"
+    },
+    {
+      "file_name": "generic/jj3A5N8.png",
+      "provider": "generic",
+      "width": 1234,
+      "height": 1666,
+      "hash": "91bf37640db35d2794b83c0e453a1afd"
+    },
+    {
+      "file_name": "generic/jrUBAF7.png",
+      "provider": "generic",
+      "width": 1348,
+      "height": 1390,
+      "hash": "3343b461ea0b971703b1a6ee598b823a"
+    },
+    {
+      "file_name": "generic/k8s.png",
+      "provider": "generic",
+      "width": 961,
+      "height": 641,
+      "hash": "1a0f81060e378ea0284bee218176e1f5"
+    },
+    {
+      "file_name": "generic/zdCAkB3.png",
+      "provider": "generic",
+      "width": 2880,
+      "height": 2560,
+      "hash": "ad9aec05c86cd7d42ca246a31d2e73a2"
+    }
+  ],
+  "statistics": {
+    "total": 66,
+    "by_provider": {
+      "aws": 16,
+      "azure": 18,
+      "gcp": 6,
+      "generic": 26
+    }
+  }
+}

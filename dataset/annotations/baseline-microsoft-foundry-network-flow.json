@@ -1,0 +1,874 @@
+{
+  "image_id": "baseline-microsoft-foundry-network-flow",
+  "file_name": "azure/baseline-microsoft-foundry-network-flow.png",
+  "width": 1200,
+  "height": 631,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.04,
+        0.54,
+        0.03,
+        0.04
+      ],
+      "bbox_pixels": [
+        30,
+        328,
+        66,
+        353
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.08,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        60,
+        410,
+        132,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private DNS zone",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.35,
+        0.3,
+        0.5,
+        0.45
+      ],
+      "bbox_pixels": [
+        120,
+        47,
+        720,
+        331
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.18,
+        0.32,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        144,
+        176,
+        288,
+        227
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.18,
+        0.45,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        168,
+        265,
+        264,
+        302
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway with Azure WAF",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.28,
+        0.55,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        276,
+        328,
+        396,
+        365
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private endpoint subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.28,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        300,
+        410,
+        372,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App service private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.28,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        300,
+        517,
+        372,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.35,
+        0.42,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        348,
+        239,
+        491,
+        290
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service integration subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.6,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        672,
+        246,
+        768,
+        283
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure AI services integration aspect",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.72,
+        0.42,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        816,
+        246,
+        912,
+        283
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.72,
+        0.54,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        827,
+        328,
+        900,
+        353
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.88,
+        0.5,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1008,
+        296,
+        1104,
+        334
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Build agents subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.88,
+        0.62,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1020,
+        378,
+        1092,
+        403
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Build agents",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.38,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        420,
+        410,
+        491,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Key Vault private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.38,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        420,
+        517,
+        491,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.48,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        540,
+        410,
+        612,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Storage private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.48,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        540,
+        517,
+        612,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.58,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        660,
+        410,
+        732,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service Foundry private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.68,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        780,
+        410,
+        852,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure AI Search private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.68,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        780,
+        517,
+        852,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure AI Search",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 22,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.78,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        900,
+        410,
+        972,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Cosmos DB private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 23,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.78,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        900,
+        517,
+        972,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Cosmos DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 24,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.88,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1020,
+        410,
+        1092,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Storage private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 25,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.88,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1020,
+        517,
+        1092,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 26,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.98,
+        0.67,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1140,
+        410,
+        1212,
+        435
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Knowledge base private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 27,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.98,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1140,
+        517,
+        1212,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure AI Search",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 28,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        0.12,
+        0.85,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        108,
+        517,
+        180,
+        555
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 29,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.12,
+        0.96,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        108,
+        593,
+        180,
+        618
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Insights",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 30,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.18,
+        0.96,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        180,
+        593,
+        252,
+        618
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 31,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.75,
+        0.2,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        864,
+        113,
+        936,
+        138
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internet services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 32,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        1.02,
+        0.18,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1176,
+        88,
+        1272,
+        138
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Foundry Foundry AI Services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 33,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        1.02,
+        0.38,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1176,
+        214,
+        1272,
+        265
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Foundry Agent Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 34,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        1.18,
+        0.32,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1380,
+        182,
+        1452,
+        220
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Managed identities",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 35,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        1.02,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1176,
+        340,
+        1272,
+        391
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure OpenAI Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 36,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.88,
+        0.9,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        1008,
+        555,
+        1104,
+        580
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Community hub API gateway",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 15,
+      "to_id": 16,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 24,
+      "to_id": 25,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 20,
+      "to_id": 27,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 22,
+      "to_id": 23,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 26,
+      "to_id": 27,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 12,
+      "to_id": 31,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 33,
+      "to_id": 35,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 32,
+      "to_id": 34,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

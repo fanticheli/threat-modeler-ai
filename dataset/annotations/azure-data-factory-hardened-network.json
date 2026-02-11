@@ -1,0 +1,776 @@
+{
+  "image_id": "azure-data-factory-hardened-network",
+  "file_name": "azure/azure-data-factory-hardened-network.png",
+  "width": 1200,
+  "height": 817,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.03,
+        0.17,
+        0.03,
+        0.04
+      ],
+      "bbox_pixels": [
+        18,
+        122,
+        54,
+        155
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.08,
+        0.26,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        48,
+        187,
+        144,
+        236
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Virtual Desktop",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "web_browser",
+      "bbox": [
+        0.16,
+        0.28,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        156,
+        212,
+        228,
+        245
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Edge",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "web_browser",
+      "bbox": [
+        0.16,
+        0.32,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        156,
+        245,
+        228,
+        277
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "OpenAI Studio",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.08,
+        0.35,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        60,
+        269,
+        132,
+        302
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure DevOps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.3,
+        0.08,
+        0.12,
+        0.04
+      ],
+      "bbox_pixels": [
+        288,
+        49,
+        432,
+        81
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Active Directory Domain Services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.4,
+        0.24,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        432,
+        171,
+        528,
+        220
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure ExpressRoute gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.55,
+        0.25,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        624,
+        187,
+        696,
+        220
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.67,
+        0.24,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        768,
+        179,
+        840,
+        212
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure DDoS Protection",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.81,
+        0.25,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        936,
+        187,
+        1008,
+        220
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.94,
+        0.24,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1092,
+        179,
+        1164,
+        212
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        1.06,
+        0.26,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1236,
+        196,
+        1308,
+        228
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DNS zones",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        1.06,
+        0.22,
+        0.04,
+        0.03
+      ],
+      "bbox_pixels": [
+        1248,
+        167,
+        1296,
+        191
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "RBAC",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        1.06,
+        0.3,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1236,
+        228,
+        1308,
+        261
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Policy",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.42,
+        0.46,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        480,
+        351,
+        528,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PE-ADF",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.53,
+        0.46,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        612,
+        351,
+        660,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PE-KV",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.63,
+        0.46,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        732,
+        351,
+        780,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PE-SA",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.8,
+        0.46,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        936,
+        351,
+        983,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PE-RSV",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.9,
+        0.46,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        1056,
+        351,
+        1104,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "PE-Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.45,
+        0.58,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        491,
+        449,
+        588,
+        498
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Data Factory",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.58,
+        0.58,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        648,
+        449,
+        744,
+        498
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 22,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.6,
+        0.63,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        672,
+        498,
+        768,
+        531
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Blob Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 23,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.67,
+        0.55,
+        0.04,
+        0.03
+      ],
+      "bbox_pixels": [
+        780,
+        437,
+        827,
+        461
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "NSG",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 24,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.78,
+        0.55,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        888,
+        433,
+        983,
+        465
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Recovery services vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 25,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.8,
+        0.69,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        900,
+        539,
+        1020,
+        588
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Self-hosted Integration runtimes",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 26,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        1.06,
+        0.42,
+        0.04,
+        0.03
+      ],
+      "bbox_pixels": [
+        1248,
+        330,
+        1296,
+        355
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "RBAC",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 27,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        1.06,
+        0.47,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1236,
+        367,
+        1308,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DNS zones",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 28,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        1.06,
+        0.51,
+        0.06,
+        0.04
+      ],
+      "bbox_pixels": [
+        1236,
+        400,
+        1308,
+        433
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Policy",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 29,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.48,
+        0.04,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        528,
+        16,
+        624,
+        49
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra Connect",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 30,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.7,
+        0.04,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        792,
+        16,
+        888,
+        49
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 31,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.9,
+        0.35,
+        0.08,
+        0.04
+      ],
+      "bbox_pixels": [
+        1032,
+        269,
+        1128,
+        302
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Private Link Service",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 29,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 29,
+      "to_id": 30,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 11,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 15,
+      "to_id": 20,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 16,
+      "to_id": 21,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 20,
+      "to_id": 21,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 20,
+      "to_id": 22,
+      "protocol": "",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

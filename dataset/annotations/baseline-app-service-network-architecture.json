@@ -1,0 +1,472 @@
+{
+  "image_id": "baseline-app-service-network-architecture",
+  "file_name": "azure/baseline-app-service-network-architecture.png",
+  "width": 1200,
+  "height": 801,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.17,
+        0.14,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        168,
+        80,
+        240,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.26,
+        0.21,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        240,
+        136,
+        384,
+        200
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private DNS zones",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.46,
+        0.19,
+        0.14,
+        0.12
+      ],
+      "bbox_pixels": [
+        468,
+        104,
+        636,
+        200
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Application Gateway with Azure Web Application Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 19,
+      "category_name": "waf",
+      "bbox": [
+        0.36,
+        0.28,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        384,
+        200,
+        480,
+        248
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DDoS protection",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.64,
+        0.23,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        708,
+        152,
+        827,
+        216
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.79,
+        0.24,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        900,
+        168,
+        996,
+        216
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Database private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.92,
+        0.24,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1056,
+        168,
+        1152,
+        216
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Config private endpoints",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        1.05,
+        0.24,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1212,
+        168,
+        1308,
+        216
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Storage private endpoint",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        0.41,
+        0.44,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        432,
+        320,
+        552,
+        384
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.59,
+        0.43,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        660,
+        320,
+        756,
+        368
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.57,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        636,
+        384,
+        732,
+        448
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service instance",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.64,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        720,
+        384,
+        816,
+        448
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service instance",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.71,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        804,
+        384,
+        900,
+        448
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service instance",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.81,
+        0.44,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        912,
+        320,
+        1032,
+        384
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure SQL Database",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.94,
+        0.44,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1068,
+        320,
+        1188,
+        384
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        1.07,
+        0.44,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1224,
+        320,
+        1344,
+        384
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.39,
+        0.56,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        420,
+        424,
+        516,
+        472
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Insights",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.47,
+        0.56,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        516,
+        424,
+        612,
+        472
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 14,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 15,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 16,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 10,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 13,
+      "protocol": "TCP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

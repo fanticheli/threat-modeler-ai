@@ -1,0 +1,324 @@
+{
+  "image_id": "CloudStorage",
+  "file_name": "generic/CloudStorage.png",
+  "width": 779,
+  "height": 740,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.08,
+        0.15,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        15,
+        55,
+        109,
+        166
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Block Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "web_browser",
+      "bbox": [
+        0.25,
+        0.08,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        163,
+        37,
+        225,
+        81
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "laptop",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 2,
+      "category_name": "mobile_app",
+      "bbox": [
+        0.35,
+        0.08,
+        0.04,
+        0.08
+      ],
+      "bbox_pixels": [
+        257,
+        29,
+        288,
+        88
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "mobile",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.3,
+        0.25,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        202,
+        155,
+        264,
+        214
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "load_balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.3,
+        0.55,
+        0.15,
+        0.15
+      ],
+      "bbox_pixels": [
+        175,
+        351,
+        292,
+        462
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.2,
+        0.75,
+        0.15,
+        0.15
+      ],
+      "bbox_pixels": [
+        97,
+        499,
+        214,
+        610
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metadata Cache",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.42,
+        0.75,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        280,
+        499,
+        373,
+        610
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metadata DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.08,
+        0.75,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        15,
+        499,
+        109,
+        610
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.08,
+        0.95,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        15,
+        666,
+        109,
+        740
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cold Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.65,
+        0.55,
+        0.15,
+        0.1
+      ],
+      "bbox_pixels": [
+        447,
+        370,
+        564,
+        444
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Notification Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 29,
+      "category_name": "email_service",
+      "bbox": [
+        0.9,
+        0.55,
+        0.08,
+        0.05
+      ],
+      "bbox_pixels": [
+        669,
+        388,
+        732,
+        425
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Offline Backup Queue",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 10,
+      "protocol": "log polling",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

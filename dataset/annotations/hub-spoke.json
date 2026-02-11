@@ -1,0 +1,596 @@
+{
+  "image_id": "hub-spoke",
+  "file_name": "azure/hub-spoke.png",
+  "width": 1093,
+  "height": 682,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.55,
+        0.15,
+        0.4,
+        0.05
+      ],
+      "bbox_pixels": [
+        382,
+        85,
+        819,
+        119
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Virtual Network Manager",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.37,
+        0.6,
+        0.35,
+        0.55
+      ],
+      "bbox_pixels": [
+        213,
+        221,
+        595,
+        596
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Hub virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.4,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        393,
+        177,
+        480,
+        231
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Bastion",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.37,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        360,
+        368,
+        448,
+        422
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.37,
+        0.8,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        322,
+        518,
+        486,
+        572
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "VPN Gateway/ExpressRoute",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.57,
+        0.55,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        579,
+        347,
+        666,
+        402
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.12,
+        0.55,
+        0.2,
+        0.25
+      ],
+      "bbox_pixels": [
+        21,
+        289,
+        240,
+        460
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cross-premises network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.07,
+        0.65,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        32,
+        416,
+        120,
+        470
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.17,
+        0.65,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        142,
+        416,
+        229,
+        470
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.82,
+        0.45,
+        0.25,
+        0.25
+      ],
+      "bbox_pixels": [
+        759,
+        221,
+        1032,
+        392
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Production spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.75,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        776,
+        327,
+        863,
+        381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.83,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        863,
+        327,
+        950,
+        381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.91,
+        0.52,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        950,
+        327,
+        1038,
+        381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.82,
+        0.75,
+        0.25,
+        0.25
+      ],
+      "bbox_pixels": [
+        759,
+        426,
+        1032,
+        596
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Production spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.75,
+        0.82,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        776,
+        531,
+        863,
+        586
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.83,
+        0.82,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        863,
+        531,
+        950,
+        586
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.91,
+        0.82,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        950,
+        531,
+        1038,
+        586
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.37,
+        0.92,
+        0.25,
+        0.2
+      ],
+      "bbox_pixels": [
+        267,
+        559,
+        541,
+        695
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Non-production spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.3,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        284,
+        634,
+        371,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.37,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        360,
+        634,
+        448,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.44,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        437,
+        634,
+        524,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 22,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.82,
+        0.92,
+        0.25,
+        0.2
+      ],
+      "bbox_pixels": [
+        759,
+        559,
+        1032,
+        695
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Non-production spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 23,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.75,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        776,
+        634,
+        863,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 24,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.83,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        863,
+        634,
+        950,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 25,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.91,
+        0.97,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        950,
+        634,
+        1038,
+        688
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 2,
+      "to_id": 14,
+      "protocol": "VNet peering",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 7,
+      "protocol": "VPN",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 2,
+      "protocol": "Diagnostics",
+      "bidirectional": false
+    },
+    {
+      "from_id": 22,
+      "to_id": 22,
+      "protocol": "Peered or directly connected virtual networks",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 22,
+      "protocol": "Connected virtual networks",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

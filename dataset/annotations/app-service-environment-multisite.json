@@ -1,0 +1,300 @@
+{
+  "image_id": "app-service-environment-multisite",
+  "file_name": "azure/app-service-environment-multisite.png",
+  "width": 1200,
+  "height": 927,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.1,
+        0.55,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        72,
+        463,
+        168,
+        556
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.66,
+        0.12,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        756,
+        74,
+        827,
+        148
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.42,
+        0.58,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        432,
+        468,
+        576,
+        607
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.67,
+        0.56,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        756,
+        482,
+        852,
+        556
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internal load balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.82,
+        0.6,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        948,
+        519,
+        1020,
+        593
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service Environment",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.96,
+        0.4,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1116,
+        333,
+        1188,
+        407
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App service for App 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.96,
+        0.57,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1116,
+        491,
+        1188,
+        565
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App service for App 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.96,
+        0.72,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1116,
+        630,
+        1188,
+        704
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App service for API",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.42,
+        0.7,
+        0.25,
+        0.03
+      ],
+      "bbox_pixels": [
+        354,
+        634,
+        654,
+        662
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.82,
+        0.79,
+        0.25,
+        0.03
+      ],
+      "bbox_pixels": [
+        833,
+        718,
+        1134,
+        746
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service Environment subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.69,
+        0.82,
+        0.15,
+        0.03
+      ],
+      "bbox_pixels": [
+        738,
+        746,
+        918,
+        774
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual network",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

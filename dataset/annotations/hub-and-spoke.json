@@ -1,0 +1,418 @@
+{
+  "image_id": "hub-and-spoke",
+  "file_name": "azure/hub-and-spoke.png",
+  "width": 960,
+  "height": 583,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.25,
+        0.53,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        168,
+        285,
+        312,
+        332
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Hub Virtual Network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.75,
+        0.53,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        648,
+        285,
+        792,
+        332
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Hub Virtual Network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.15,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        105,
+        186,
+        182,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.25,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        201,
+        128,
+        278,
+        163
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.35,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        297,
+        186,
+        374,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.1,
+        0.53,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        57,
+        291,
+        134,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.4,
+        0.53,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        345,
+        291,
+        422,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.15,
+        0.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        105,
+        390,
+        182,
+        425
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.8,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        201,
+        448,
+        278,
+        483
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.35,
+        0.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        297,
+        390,
+        374,
+        425
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.65,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        585,
+        186,
+        662,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.25,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        681,
+        128,
+        758,
+        163
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.85,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        777,
+        186,
+        854,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.6,
+        0.53,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        537,
+        291,
+        614,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.9,
+        0.53,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        825,
+        291,
+        902,
+        326
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.65,
+        0.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        585,
+        390,
+        662,
+        425
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.8,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        681,
+        448,
+        758,
+        483
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.85,
+        0.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        777,
+        390,
+        854,
+        425
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 2,
+      "to_id": 2,
+      "protocol": "",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

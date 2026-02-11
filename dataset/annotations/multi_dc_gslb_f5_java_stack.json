@@ -1,0 +1,636 @@
+{
+  "image_id": "multi_dc_gslb_f5_java_stack",
+  "file_name": "aws/multi_dc_gslb_f5_java_stack.png",
+  "width": 1995,
+  "height": 2186,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.13,
+        0.67,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        179,
+        1399,
+        339,
+        1530
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internet Users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.26,
+        0.62,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        418,
+        1267,
+        618,
+        1442
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "F5 GSLB DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.35,
+        0.27,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        618,
+        524,
+        778,
+        655
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DC1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.35,
+        0.47,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        598,
+        939,
+        798,
+        1114
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "F5 Big-IP 8900 Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.46,
+        0.21,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        837,
+        393,
+        997,
+        524
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Apache httpd",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.58,
+        0.21,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1077,
+        393,
+        1236,
+        524
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Glassfish",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.69,
+        0.21,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1296,
+        393,
+        1456,
+        524
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Java",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.21,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        393,
+        1635,
+        524
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Memcached",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.46,
+        0.47,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        837,
+        961,
+        997,
+        1093
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Apache httpd",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.58,
+        0.47,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1077,
+        961,
+        1236,
+        1093
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Glassfish",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.69,
+        0.47,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1296,
+        961,
+        1456,
+        1093
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Java",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.47,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        961,
+        1635,
+        1093
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Memcached",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.78,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        699,
+        1635,
+        830
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cassandra node 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.88,
+        0.35,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1675,
+        699,
+        1835,
+        830
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cassandra node 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.35,
+        0.68,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        618,
+        1420,
+        778,
+        1552
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DC2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.35,
+        0.77,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        598,
+        1595,
+        798,
+        1770
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "F5 Big-IP 8900 Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.46,
+        0.64,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        837,
+        1333,
+        997,
+        1464
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Apache httpd",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.58,
+        0.64,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1077,
+        1333,
+        1236,
+        1464
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Glassfish",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.69,
+        0.64,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1296,
+        1333,
+        1456,
+        1464
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Java",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.64,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        1333,
+        1635,
+        1464
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Memcached",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 21,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.46,
+        0.94,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        837,
+        1989,
+        997,
+        2120
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Apache httpd",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 22,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.58,
+        0.94,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1077,
+        1989,
+        1236,
+        2120
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Glassfish",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 23,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.69,
+        0.94,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1296,
+        1989,
+        1456,
+        2120
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Java",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 24,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.94,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        1989,
+        1635,
+        2120
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Memcached",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 25,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.78,
+        0.82,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1476,
+        1726,
+        1635,
+        1858
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cassandra node 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 26,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.88,
+        0.82,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1675,
+        1726,
+        1835,
+        1858
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cassandra node 2",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 21,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 16,
+      "to_id": 21,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 21,
+      "to_id": 22,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 22,
+      "to_id": 23,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 23,
+      "to_id": 24,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 23,
+      "to_id": 25,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 25,
+      "to_id": 26,
+      "protocol": "TCP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

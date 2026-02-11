@@ -1,0 +1,326 @@
+{
+  "image_id": "aws_event_processing",
+  "file_name": "aws/aws_event_processing.png",
+  "width": 1345,
+  "height": 1201,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.14,
+        0.49,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        134,
+        528,
+        242,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "EKS source",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.33,
+        0.26,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        390,
+        252,
+        497,
+        372
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ECS worker1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.33,
+        0.49,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        390,
+        528,
+        497,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ECS worker2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.33,
+        0.72,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        390,
+        804,
+        497,
+        924
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ECS worker3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.49,
+        0.49,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        605,
+        528,
+        712,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SQS event queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.65,
+        0.26,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        820,
+        252,
+        928,
+        372
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda proc1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.65,
+        0.49,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        820,
+        528,
+        928,
+        648
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda proc2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.65,
+        0.72,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        820,
+        804,
+        928,
+        924
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda proc3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.82,
+        0.38,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1049,
+        396,
+        1156,
+        516
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "S3 storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.82,
+        0.6,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1049,
+        660,
+        1156,
+        780
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Redshift analytics",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 9,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 9,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 10,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 10,
+      "protocol": "",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 10,
+      "protocol": "",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

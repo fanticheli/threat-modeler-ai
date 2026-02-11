@@ -1,0 +1,416 @@
+{
+  "image_id": "app-service-environment",
+  "file_name": "azure/app-service-environment.png",
+  "width": 1200,
+  "height": 928,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.18,
+        0.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        168,
+        621,
+        264,
+        677
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.35,
+        0.7,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        348,
+        603,
+        491,
+        696
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.52,
+        0.66,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        588,
+        575,
+        660,
+        649
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "App Service Environment ILB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.67,
+        0.28,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        756,
+        222,
+        852,
+        296
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web app",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.67,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        756,
+        501,
+        852,
+        575
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private API",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.67,
+        0.88,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        756,
+        779,
+        852,
+        853
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Function",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.9,
+        0.48,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1044,
+        417,
+        1116,
+        473
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        0.95,
+        0.26,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        213,
+        1188,
+        269
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.65,
+        1.4,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        720,
+        1262,
+        840,
+        1336
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Jump box virtual machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.95,
+        1.22,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        1104,
+        1188,
+        1160
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Managed Redis",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.95,
+        1.38,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        1252,
+        1188,
+        1308
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service Bus",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.95,
+        1.54,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        1401,
+        1188,
+        1456
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Cosmos DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.95,
+        1.7,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        1549,
+        1188,
+        1605
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure SQL Database",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.95,
+        1.86,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1092,
+        1698,
+        1188,
+        1753
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.78,
+        1.88,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        888,
+        1716,
+        983,
+        1772
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private DNS zones",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.65,
+        2.04,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        732,
+        1865,
+        827,
+        1920
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GitHub Actions",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 7,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 16,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

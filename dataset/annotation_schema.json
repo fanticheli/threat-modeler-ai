@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Architecture Diagram Annotation",
+  "description": "Schema for annotating architecture diagram components",
+  "type": "object",
+  "required": ["image_id", "file_name", "width", "height", "annotations"],
+  "properties": {
+    "image_id": {
+      "type": "string",
+      "description": "Unique identifier for the image"
+    },
+    "file_name": {
+      "type": "string",
+      "description": "Relative path to the image file"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Image width in pixels"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Image height in pixels"
+    },
+    "provider": {
+      "type": "string",
+      "enum": ["aws", "azure", "gcp", "generic", "multi-cloud"],
+      "description": "Cloud provider depicted in the diagram"
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category_id", "category_name", "bbox"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique annotation ID within this image"
+          },
+          "category_id": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 29,
+            "description": "Category ID matching dataset_config.yaml"
+          },
+          "category_name": {
+            "type": "string",
+            "description": "Human-readable category name"
+          },
+          "bbox": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 4,
+            "maxItems": 4,
+            "description": "Bounding box [x_center, y_center, width, height] normalized 0-1"
+          },
+          "bbox_pixels": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "minItems": 4,
+            "maxItems": 4,
+            "description": "Bounding box [x_min, y_min, x_max, y_max] in pixels"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Confidence score (for auto-annotations)"
+          },
+          "attributes": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "description": "Label shown in diagram (e.g., 'RDS MySQL')"
+              },
+              "service": {
+                "type": "string",
+                "description": "Specific service name (e.g., 'Amazon RDS')"
+              },
+              "is_replica": {
+                "type": "boolean",
+                "description": "Whether this is a replica of another component"
+              },
+              "replica_of": {
+                "type": "integer",
+                "description": "ID of the primary component if this is a replica"
+              },
+              "availability_zone": {
+                "type": "string",
+                "description": "AZ or region if specified"
+              }
+            }
+          }
+        }
+      }
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from_id", "to_id"],
+        "properties": {
+          "from_id": {
+            "type": "integer",
+            "description": "Source component annotation ID"
+          },
+          "to_id": {
+            "type": "integer",
+            "description": "Target component annotation ID"
+          },
+          "protocol": {
+            "type": "string",
+            "description": "Communication protocol (HTTP, HTTPS, TCP, etc.)"
+          },
+          "port": {
+            "type": "string",
+            "description": "Port number if specified"
+          },
+          "bidirectional": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether connection is bidirectional"
+          }
+        }
+      }
+    }
+  }
+}

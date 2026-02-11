@@ -1,0 +1,312 @@
+{
+  "image_id": "Proximity",
+  "file_name": "generic/Proximity.png",
+  "width": 521,
+  "height": 711,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.5,
+        0.05,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        239,
+        7,
+        281,
+        63
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.5,
+        0.18,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        239,
+        99,
+        281,
+        156
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.5,
+        0.4,
+        0.2,
+        0.15
+      ],
+      "bbox_pixels": [
+        208,
+        231,
+        312,
+        337
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.18,
+        0.55,
+        0.25,
+        0.15
+      ],
+      "bbox_pixels": [
+        28,
+        337,
+        158,
+        444
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Location Based Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.55,
+        0.25,
+        0.15
+      ],
+      "bbox_pixels": [
+        325,
+        337,
+        455,
+        444
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Business Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.08,
+        0.75,
+        0.12,
+        0.18
+      ],
+      "bbox_pixels": [
+        10,
+        469,
+        72,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Geo Hash",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.38,
+        0.82,
+        0.15,
+        0.15
+      ],
+      "bbox_pixels": [
+        158,
+        529,
+        237,
+        636
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Workers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.85,
+        0.75,
+        0.12,
+        0.18
+      ],
+      "bbox_pixels": [
+        411,
+        469,
+        474,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Business Info",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.28,
+        0.9,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        125,
+        597,
+        166,
+        682
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.42,
+        0.9,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        197,
+        597,
+        239,
+        682
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.7,
+        0.9,
+        0.1,
+        0.12
+      ],
+      "bbox_pixels": [
+        338,
+        597,
+        390,
+        682
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Primary",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "image_id": "Analytics%20Serverless%20Data%20Back%20End",
+  "file_name": "aws/Analytics%20Serverless%20Data%20Back%20End.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.15,
+        0.75,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        211,
+        766,
+        364,
+        853
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SOURCE DATA",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.25,
+        0.55,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        403,
+        550,
+        556,
+        637
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "S3 Bucket",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.25,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        403,
+        874,
+        556,
+        961
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "APP FRONT END",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.38,
+        0.5,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        633,
+        496,
+        825,
+        583
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Queue Processing",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.75,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        902,
+        777,
+        1017,
+        842
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ML",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.55,
+        0.75,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        998,
+        777,
+        1113,
+        842
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "V",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.65,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1171,
+        874,
+        1324,
+        961
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cognito",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.5,
+        0.45,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        864,
+        442,
+        1056,
+        529
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Data Pipelines",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.68,
+        0.6,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1209,
+        604,
+        1401,
+        691
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Interactions from Front End",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.75,
+        0.3,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1344,
+        280,
+        1536,
+        367
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Message Queues",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.85,
+        0.25,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1574,
+        237,
+        1689,
+        302
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "P",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.92,
+        0.25,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1708,
+        237,
+        1824,
+        302
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "S",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

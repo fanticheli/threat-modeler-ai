@@ -1,0 +1,94 @@
+{
+  "image_id": "AWS%20Backups",
+  "file_name": "aws/AWS%20Backups.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.75,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1363,
+        421,
+        1516,
+        550
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "EC2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.75,
+        0.25,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1363,
+        205,
+        1516,
+        334
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.88,
+        0.15,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        1574,
+        118,
+        1804,
+        205
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Create AMI Function",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

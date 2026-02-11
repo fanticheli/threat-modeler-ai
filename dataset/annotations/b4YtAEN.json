@@ -1,0 +1,14 @@
+{
+  "image_id": "b4YtAEN",
+  "file_name": "generic/b4YtAEN.png",
+  "width": 2926,
+  "height": 2560,
+  "provider": "generic",
+  "annotations": [],
+  "connections": [],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

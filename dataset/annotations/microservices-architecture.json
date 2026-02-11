@@ -1,0 +1,510 @@
+{
+  "image_id": "microservices-architecture",
+  "file_name": "azure/microservices-architecture.png",
+  "width": 1200,
+  "height": 614,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.18,
+        0.45,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        168,
+        245,
+        264,
+        307
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Client apps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.35,
+        0.45,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        372,
+        239,
+        468,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.55,
+        0.18,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        588,
+        85,
+        732,
+        135
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Kubernetes Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.55,
+        0.4,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        624,
+        221,
+        696,
+        270
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Ingress",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.68,
+        0.4,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        780,
+        227,
+        852,
+        264
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "microservice1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.8,
+        0.4,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        924,
+        227,
+        996,
+        264
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "microservice2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.92,
+        0.35,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1068,
+        196,
+        1140,
+        233
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "microservice3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.92,
+        0.45,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1068,
+        257,
+        1140,
+        294
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "microservice4",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.92,
+        0.55,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1068,
+        319,
+        1140,
+        356
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "microservice5",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.35,
+        0.75,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        348,
+        429,
+        491,
+        491
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Container Registry",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.18,
+        0.75,
+        0.1,
+        0.12
+      ],
+      "bbox_pixels": [
+        156,
+        423,
+        276,
+        497
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Pipelines",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        0.58,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        648,
+        497,
+        744,
+        546
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.68,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        768,
+        497,
+        864,
+        546
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics workspace",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.78,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        888,
+        497,
+        983,
+        546
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Application Insights",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.88,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1008,
+        497,
+        1104,
+        546
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.98,
+        0.85,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1128,
+        497,
+        1224,
+        546
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.95,
+        0.25,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        1068,
+        128,
+        1212,
+        178
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure DocumentDB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.95,
+        0.35,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        1068,
+        190,
+        1212,
+        239
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Cosmos DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.95,
+        0.55,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        1068,
+        313,
+        1212,
+        362
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Managed Redis",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 20,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.95,
+        0.78,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        1068,
+        454,
+        1212,
+        503
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Service Bus",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 9,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 10,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

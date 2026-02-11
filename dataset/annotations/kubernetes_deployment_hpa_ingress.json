@@ -1,0 +1,246 @@
+{
+  "image_id": "kubernetes_deployment_hpa_ingress",
+  "file_name": "gcp/kubernetes_deployment_hpa_ingress.png",
+  "width": 1552,
+  "height": 1080,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.2,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        248,
+        486,
+        372,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Ingress",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.35,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        481,
+        486,
+        605,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.5,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        713,
+        486,
+        838,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.65,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        946,
+        486,
+        1070,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ReplicaSet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.8,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1179,
+        486,
+        1303,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Deployment",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.95,
+        0.5,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1412,
+        486,
+        1536,
+        594
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Horizontal Pod Autoscaler",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.5,
+        0.25,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        713,
+        216,
+        838,
+        324
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.5,
+        0.75,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        713,
+        756,
+        838,
+        864
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web3",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

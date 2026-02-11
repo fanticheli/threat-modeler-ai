@@ -1,0 +1,446 @@
+{
+  "image_id": "gcp_cloudflare_web_architecture_gke",
+  "file_name": "gcp/gcp_cloudflare_web_architecture_gke.png",
+  "width": 1565,
+  "height": 2421,
+  "provider": "gcp",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.45,
+        0.12,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        641,
+        217,
+        766,
+        363
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internet Users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.38,
+        0.32,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        500,
+        677,
+        688,
+        871
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloudflare DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 17,
+      "category_name": "cdn",
+      "bbox": [
+        0.52,
+        0.32,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        719,
+        677,
+        907,
+        871
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloudflare CDN / WAF",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.38,
+        0.46,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        532,
+        1041,
+        657,
+        1186
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.52,
+        0.46,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        751,
+        1041,
+        876,
+        1186
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GCS bucket (static assets)",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.45,
+        0.58,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        641,
+        1331,
+        766,
+        1476
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.28,
+        0.73,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        391,
+        1694,
+        485,
+        1839
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GKE",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.38,
+        0.75,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        532,
+        1718,
+        657,
+        1912
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Nginx Ingress Controller",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.28,
+        0.85,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        375,
+        1985,
+        500,
+        2130
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 1 Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.48,
+        0.85,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        688,
+        1985,
+        813,
+        2130
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 2 Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.2,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        281,
+        2251,
+        344,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.28,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        406,
+        2251,
+        469,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.36,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        532,
+        2251,
+        594,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.48,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        719,
+        2251,
+        782,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.56,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        845,
+        2251,
+        907,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.64,
+        0.95,
+        0.04,
+        0.04
+      ],
+      "bbox_pixels": [
+        970,
+        2251,
+        1032,
+        2348
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web 3",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "DNS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 6,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 10,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 14,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 15,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 16,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 14,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 15,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 16,
+      "protocol": "HTTP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "image_id": "ServiceMesh",
+  "file_name": "generic/ServiceMesh.png",
+  "width": 900,
+  "height": 641,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.5,
+        0.5,
+        0.9,
+        0.85
+      ],
+      "bbox_pixels": [
+        45,
+        48,
+        855,
+        592
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "k8s cluster",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.25,
+        0.4,
+        0.35,
+        0.45
+      ],
+      "bbox_pixels": [
+        67,
+        112,
+        382,
+        400
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Worker Node",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.25,
+        0.25,
+        0.3,
+        0.4
+      ],
+      "bbox_pixels": [
+        90,
+        32,
+        360,
+        288
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.75,
+        0.25,
+        0.3,
+        0.4
+      ],
+      "bbox_pixels": [
+        540,
+        32,
+        810,
+        288
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.15,
+        0.25,
+        0.08
+      ],
+      "bbox_pixels": [
+        112,
+        70,
+        337,
+        121
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service A",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.15,
+        0.25,
+        0.08
+      ],
+      "bbox_pixels": [
+        562,
+        70,
+        787,
+        121
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Service A",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.35,
+        0.25,
+        0.08
+      ],
+      "bbox_pixels": [
+        112,
+        198,
+        337,
+        249
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Proxy",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.35,
+        0.25,
+        0.08
+      ],
+      "bbox_pixels": [
+        562,
+        198,
+        787,
+        249
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Proxy",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.25,
+        0.8,
+        0.2,
+        0.08
+      ],
+      "bbox_pixels": [
+        135,
+        487,
+        315,
+        538
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "istiod",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.5,
+        0.8,
+        0.2,
+        0.08
+      ],
+      "bbox_pixels": [
+        360,
+        487,
+        540,
+        538
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "kiali",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

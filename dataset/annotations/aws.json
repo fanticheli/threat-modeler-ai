@@ -1,0 +1,37 @@
+{
+  "image_id": "aws",
+  "file_name": "aws/aws.png",
+  "width": 512,
+  "height": 256,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.5,
+        0.5,
+        0.8,
+        0.6
+      ],
+      "bbox_pixels": [
+        51,
+        51,
+        460,
+        204
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "amazon web services",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

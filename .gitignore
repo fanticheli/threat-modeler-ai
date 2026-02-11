@@ -1,4 +1,4 @@
-# Repositórios separados (não versionar aqui)
+# Repositorios separados (nao versionar aqui)
 threat-modeler-ai-frontend/
 threat-modeler-ai-backend/
 
@@ -10,3 +10,25 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+.eggs/
+
+# YOLO - pesos pre-treinados (baixar via ultralytics)
+dataset/yolov8n.pt
+
+# YOLO - pesos duplicados do treinamento (o modelo final esta em yolo-service/model/best.pt)
+dataset/runs/**/weights/
+
+# Environment
+.env
+.env.local

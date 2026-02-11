@@ -1,0 +1,296 @@
+{
+  "image_id": "AutoCompleteSystem",
+  "file_name": "generic/AutoCompleteSystem.png",
+  "width": 791,
+  "height": 401,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.06,
+        0.08,
+        0.04,
+        0.06
+      ],
+      "bbox_pixels": [
+        31,
+        20,
+        63,
+        44
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Desktop",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "category_name": "mobile_app",
+      "bbox": [
+        0.12,
+        0.08,
+        0.03,
+        0.06
+      ],
+      "bbox_pixels": [
+        83,
+        20,
+        106,
+        44
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Mobile",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.4,
+        0.08,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        284,
+        16,
+        348,
+        48
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.56,
+        0.08,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        411,
+        16,
+        474,
+        48
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Tile Cache",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.72,
+        0.08,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        537,
+        16,
+        601,
+        48
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Tile DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.1,
+        0.32,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        31,
+        112,
+        126,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Log Analytics Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.26,
+        0.32,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        166,
+        112,
+        245,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Logs Store",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.4,
+        0.32,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        284,
+        112,
+        348,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Aggregators",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.56,
+        0.32,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        411,
+        112,
+        474,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Aggregated Data",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.72,
+        0.32,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        537,
+        112,
+        601,
+        144
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Workers",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

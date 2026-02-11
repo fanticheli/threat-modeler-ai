@@ -1,0 +1,246 @@
+{
+  "image_id": "aws_clustered_web_services",
+  "file_name": "aws/aws_clustered_web_services.png",
+  "width": 1367,
+  "height": 1152,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.24,
+        0.57,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        246,
+        587,
+        410,
+        725
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Route53",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.4,
+        0.57,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        464,
+        587,
+        628,
+        725
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ELB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.59,
+        0.32,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        724,
+        299,
+        888,
+        437
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.59,
+        0.57,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        724,
+        587,
+        888,
+        725
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.59,
+        0.82,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        724,
+        875,
+        888,
+        1013
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "web3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.77,
+        0.46,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        970,
+        460,
+        1134,
+        599
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "userdb",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.95,
+        0.46,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        1216,
+        460,
+        1380,
+        599
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "userdb ro",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.77,
+        0.7,
+        0.12,
+        0.12
+      ],
+      "bbox_pixels": [
+        970,
+        737,
+        1134,
+        875
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ElastiCache memcached",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

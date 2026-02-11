@@ -1,0 +1,406 @@
+{
+  "image_id": "azure-data-factory-baseline",
+  "file_name": "azure/azure-data-factory-baseline.png",
+  "width": 1665,
+  "height": 1110,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.15,
+        0.43,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        149,
+        432,
+        349,
+        521
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Data source",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.45,
+        0.38,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        682,
+        355,
+        815,
+        488
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Data Factory",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.62,
+        0.18,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        932,
+        155,
+        1132,
+        244
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Databricks",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.55,
+        0.38,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        849,
+        377,
+        982,
+        466
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Bronze",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.65,
+        0.38,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1015,
+        377,
+        1148,
+        466
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Silver",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.75,
+        0.38,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1182,
+        377,
+        1315,
+        466
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Gold",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.85,
+        0.48,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1348,
+        488,
+        1481,
+        577
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SQL Server",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.85,
+        0.22,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1348,
+        199,
+        1481,
+        288
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Power BI",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.42,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        649,
+        688,
+        749,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure DevOps",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 22,
+      "category_name": "iam",
+      "bbox": [
+        0.52,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        815,
+        688,
+        915,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Entra ID",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.62,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        982,
+        688,
+        1082,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Key Vault",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.72,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1148,
+        688,
+        1248,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Monitor",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.82,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1315,
+        688,
+        1415,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Microsoft Cost Management",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.92,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1481,
+        688,
+        1581,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Purview Data Governance",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        1.02,
+        0.65,
+        0.06,
+        0.06
+      ],
+      "bbox_pixels": [
+        1648,
+        688,
+        1748,
+        754
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Site Recovery",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

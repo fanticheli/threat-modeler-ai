@@ -1,0 +1,324 @@
+{
+  "image_id": "kubernetes_stateful_architecture",
+  "file_name": "gcp/kubernetes_stateful_architecture.png",
+  "width": 1388,
+  "height": 1267,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.14,
+        0.54,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        138,
+        633,
+        249,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "StatefulSet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.39,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        485,
+        329,
+        596,
+        430
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.57,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        735,
+        329,
+        846,
+        430
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume Claim 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.75,
+        0.3,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        985,
+        329,
+        1096,
+        430
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.39,
+        0.54,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        485,
+        633,
+        596,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.57,
+        0.54,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        735,
+        633,
+        846,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume Claim 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.75,
+        0.54,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        985,
+        633,
+        1096,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.93,
+        0.54,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1235,
+        633,
+        1346,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Storage Class",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.39,
+        0.78,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        485,
+        937,
+        596,
+        1038
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.57,
+        0.78,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        735,
+        937,
+        846,
+        1038
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume Claim 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.75,
+        0.78,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        985,
+        937,
+        1096,
+        1038
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Persistent Volume 3",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "image_id": "aks-ingress-flow",
+  "file_name": "azure/aks-ingress-flow.png",
+  "width": 1200,
+  "height": 564,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.06,
+        0.48,
+        0.04,
+        0.08
+      ],
+      "bbox_pixels": [
+        48,
+        248,
+        96,
+        293
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.23,
+        0.17,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        228,
+        78,
+        324,
+        112
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Public DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.23,
+        0.48,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        204,
+        228,
+        348,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Front Door",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.65,
+        0.5,
+        0.7,
+        0.45
+      ],
+      "bbox_pixels": [
+        360,
+        155,
+        1200,
+        408
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.45,
+        0.5,
+        0.18,
+        0.25
+      ],
+      "bbox_pixels": [
+        432,
+        211,
+        648,
+        352
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Subnet with NSG",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.45,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        491,
+        304,
+        588,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Application Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.65,
+        0.2,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        732,
+        95,
+        827,
+        129
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Private DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.75,
+        0.5,
+        0.18,
+        0.25
+      ],
+      "bbox_pixels": [
+        792,
+        211,
+        1008,
+        352
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.75,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        852,
+        304,
+        948,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Internal Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.95,
+        0.5,
+        0.18,
+        0.25
+      ],
+      "bbox_pixels": [
+        1032,
+        211,
+        1248,
+        352
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.95,
+        0.58,
+        0.1,
+        0.1
+      ],
+      "bbox_pixels": [
+        1080,
+        298,
+        1200,
+        355
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "AKS Cluster",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 23,
+      "category_name": "kms",
+      "bbox": [
+        0.4,
+        0.8,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        432,
+        428,
+        528,
+        473
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Key Vault",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

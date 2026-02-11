@@ -1,0 +1,302 @@
+{
+  "image_id": "VideoStreaming",
+  "file_name": "generic/VideoStreaming.png",
+  "width": 761,
+  "height": 780,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.34,
+        0.08,
+        0.2,
+        0.08
+      ],
+      "bbox_pixels": [
+        182,
+        31,
+        334,
+        93
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Devices",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.08,
+        0.08,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        30,
+        23,
+        91,
+        101
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Original Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.34,
+        0.32,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        213,
+        210,
+        304,
+        288
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.24,
+        0.49,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        152,
+        335,
+        213,
+        429
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metadata Cache",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.43,
+        0.49,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        296,
+        343,
+        357,
+        421
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metadata DB",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.06,
+        0.56,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        0,
+        397,
+        91,
+        475
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Transcoding Servers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.34,
+        0.56,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        228,
+        413,
+        289,
+        460
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 6,
+      "category_name": "app_server",
+      "bbox": [
+        0.57,
+        0.56,
+        0.12,
+        0.1
+      ],
+      "bbox_pixels": [
+        388,
+        397,
+        479,
+        475
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Completion Handlers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.08,
+        0.72,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        30,
+        522,
+        91,
+        600
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Transcoded Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 17,
+      "category_name": "cdn",
+      "bbox": [
+        0.75,
+        0.32,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        540,
+        210,
+        601,
+        288
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CDN",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 1,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "image_id": "MessageQueue",
+  "file_name": "generic/MessageQueue.png",
+  "width": 1113,
+  "height": 561,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.1,
+        0.25,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        44,
+        117,
+        178,
+        162
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Producer A",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.1,
+        0.45,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        44,
+        230,
+        178,
+        274
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Producer B",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.5,
+        0.3,
+        0.25,
+        0.35
+      ],
+      "bbox_pixels": [
+        417,
+        70,
+        695,
+        266
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Broker",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.5,
+        0.18,
+        0.2,
+        0.06
+      ],
+      "bbox_pixels": [
+        445,
+        84,
+        667,
+        117
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "State Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 16,
+      "category_name": "storage_block",
+      "bbox": [
+        0.35,
+        0.75,
+        0.15,
+        0.08
+      ],
+      "bbox_pixels": [
+        306,
+        398,
+        473,
+        443
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Metadata Storage",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.65,
+        0.75,
+        0.18,
+        0.08
+      ],
+      "bbox_pixels": [
+        623,
+        398,
+        823,
+        443
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Coordination Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.88,
+        0.22,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        923,
+        106,
+        1035,
+        140
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Consumer A",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.88,
+        0.32,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        923,
+        162,
+        1035,
+        196
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Consumer B",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.88,
+        0.65,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        923,
+        347,
+        1035,
+        381
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Consumer A",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.88,
+        0.75,
+        0.1,
+        0.06
+      ],
+      "bbox_pixels": [
+        923,
+        403,
+        1035,
+        437
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Consumer B",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

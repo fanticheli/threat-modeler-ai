@@ -1,0 +1,234 @@
+{
+  "image_id": "Teem%20Ops%20Serverless%20Back%20End",
+  "file_name": "aws/Teem%20Ops%20Serverless%20Back%20End.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.28,
+        0.45,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        460,
+        432,
+        614,
+        540
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Messaging Store API",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.45,
+        0.32,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        768,
+        302,
+        960,
+        388
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Post Request Validation, Post Request Function",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.58,
+        0.38,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1036,
+        356,
+        1190,
+        464
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Queue Processing",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.52,
+        0.25,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        883,
+        226,
+        1113,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "EC2 Message Handlers Message Handlers",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.75,
+        0.42,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1344,
+        410,
+        1536,
+        496
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Customer Cloud API Integrations",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.42,
+        0.58,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        729,
+        583,
+        883,
+        669
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Self-API Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.4,
+        0.75,
+        0.12,
+        0.08
+      ],
+      "bbox_pixels": [
+        652,
+        766,
+        883,
+        853
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "From Team Ops Microservice",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.85,
+        0.18,
+        0.15,
+        0.12
+      ],
+      "bbox_pixels": [
+        1488,
+        129,
+        1776,
+        259
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Customer AWS Resources",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 1,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

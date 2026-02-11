@@ -1,0 +1,530 @@
+{
+  "image_id": "jj3A5N8",
+  "file_name": "generic/jj3A5N8.png",
+  "width": 1234,
+  "height": 1666,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.52,
+        0.08,
+        0.12,
+        0.06
+      ],
+      "bbox_pixels": [
+        567,
+        83,
+        715,
+        183
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Client",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.78,
+        0.08,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        913,
+        83,
+        1011,
+        183
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 17,
+      "category_name": "cdn",
+      "bbox": [
+        0.78,
+        0.18,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        913,
+        249,
+        1011,
+        349
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CDN",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.58,
+        0.28,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        629,
+        399,
+        802,
+        533
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.58,
+        0.42,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        629,
+        633,
+        802,
+        766
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web Server",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.4,
+        0.58,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        407,
+        899,
+        579,
+        1032
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Write API Async",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.58,
+        0.58,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        629,
+        899,
+        802,
+        1032
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Write API",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.76,
+        0.58,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        851,
+        899,
+        1024,
+        1032
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Read API",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.22,
+        0.58,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        209,
+        899,
+        333,
+        1032
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Queue",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.06,
+        0.58,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        12,
+        899,
+        135,
+        1032
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Worker Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.58,
+        0.72,
+        0.14,
+        0.08
+      ],
+      "bbox_pixels": [
+        629,
+        1132,
+        802,
+        1266
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Memory Cache",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.16,
+        0.82,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        148,
+        1282,
+        246,
+        1449
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "NoSQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.42,
+        0.82,
+        0.1,
+        0.1
+      ],
+      "bbox_pixels": [
+        456,
+        1282,
+        579,
+        1449
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SQL Write Master-Slave",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.56,
+        0.82,
+        0.1,
+        0.1
+      ],
+      "bbox_pixels": [
+        629,
+        1282,
+        752,
+        1449
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "SQL Read Replicas",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.76,
+        0.82,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        888,
+        1282,
+        987,
+        1449
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Object Store",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 16,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.14,
+        0.98,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        111,
+        1566,
+        234,
+        1699
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Customers A-M SQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 17,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.28,
+        0.98,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        283,
+        1566,
+        407,
+        1699
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Customers N-Z SQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 18,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.6,
+        0.98,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        678,
+        1566,
+        802,
+        1699
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Customers SQL",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 19,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.74,
+        0.98,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        851,
+        1566,
+        974,
+        1699
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Products SQL",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 9,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 14,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 8,
+      "to_id": 15,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 8,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

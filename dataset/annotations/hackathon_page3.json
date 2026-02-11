@@ -1,0 +1,234 @@
+{
+  "image_id": "hackathon_page3",
+  "file_name": "generic/hackathon_page3.png",
+  "width": 1193,
+  "height": 1685,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.15,
+        0.65,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        131,
+        1044,
+        226,
+        1145
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "User",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.35,
+        0.65,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        369,
+        1044,
+        465,
+        1145
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "API Gateway",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.55,
+        0.65,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        608,
+        1044,
+        703,
+        1145
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Logic APIs",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.35,
+        0.75,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        369,
+        1213,
+        465,
+        1314
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Developer portal",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.75,
+        0.6,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        847,
+        960,
+        942,
+        1061
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.75,
+        0.68,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        847,
+        1095,
+        942,
+        1196
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Saas services",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.75,
+        0.76,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        847,
+        1230,
+        942,
+        1331
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web services REST",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 5,
+      "category_name": "web_server",
+      "bbox": [
+        0.75,
+        0.84,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        847,
+        1364,
+        942,
+        1465
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web services SOAP",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 6,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 7,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 8,
+      "protocol": "HTTP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

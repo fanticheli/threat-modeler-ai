@@ -1,0 +1,388 @@
+{
+  "image_id": "Teem",
+  "file_name": "aws/Teem.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.15,
+        0.85,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        211,
+        864,
+        364,
+        972
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CloudFront CDN",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 17,
+      "category_name": "cdn",
+      "bbox": [
+        0.25,
+        0.75,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        422,
+        766,
+        537,
+        853
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "CloudFront",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.15,
+        0.65,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        230,
+        658,
+        345,
+        745
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "S3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.08,
+        0.45,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        96,
+        442,
+        211,
+        529
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Route 53",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.45,
+        0.65,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        787,
+        669,
+        940,
+        734
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Elastic Load Balancing",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.35,
+        0.45,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        614,
+        442,
+        729,
+        529
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.45,
+        0.45,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        806,
+        442,
+        921,
+        529
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.55,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        998,
+        334,
+        1113,
+        421
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.65,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1190,
+        334,
+        1305,
+        421
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.35,
+        0.25,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        614,
+        226,
+        729,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.55,
+        0.25,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        998,
+        226,
+        1113,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Web",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 12,
+      "category_name": "database_nosql",
+      "bbox": [
+        0.45,
+        0.25,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        806,
+        226,
+        921,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "EC2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.85,
+        0.25,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1574,
+        226,
+        1689,
+        313
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "RDS Master",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 14,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.85,
+        0.45,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1574,
+        442,
+        1689,
+        529
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "S3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 15,
+      "category_id": 15,
+      "category_name": "storage_object",
+      "bbox": [
+        0.85,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1574,
+        334,
+        1689,
+        421
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "RDS SQL",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 14,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 11,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 12,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 13,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 11,
+      "to_id": 14,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

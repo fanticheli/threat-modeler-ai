@@ -1,0 +1,368 @@
+{
+  "image_id": "kubernetes_traefik_ingress_gke",
+  "file_name": "gcp/kubernetes_traefik_ingress_gke.png",
+  "width": 1939,
+  "height": 1532,
+  "provider": "gcp",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 0,
+      "category_name": "user",
+      "bbox": [
+        0.61,
+        0.8,
+        0.08,
+        0.06
+      ],
+      "bbox_pixels": [
+        1105,
+        1179,
+        1260,
+        1271
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.52,
+        0.62,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        930,
+        888,
+        1085,
+        1011
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud Load Balancer",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.7,
+        0.62,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1279,
+        888,
+        1434,
+        1011
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Cloud DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 9,
+      "category_name": "kubernetes",
+      "bbox": [
+        0.18,
+        0.4,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        290,
+        551,
+        407,
+        674
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "GKE",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 3,
+      "category_name": "api_gateway",
+      "bbox": [
+        0.51,
+        0.4,
+        0.06,
+        0.1
+      ],
+      "bbox_pixels": [
+        930,
+        536,
+        1047,
+        689
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Traefik Ingress",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.43,
+        0.18,
+        0.15,
+        0.45
+      ],
+      "bbox_pixels": [
+        688,
+        -68,
+        979,
+        620
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 1 Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.79,
+        0.18,
+        0.15,
+        0.45
+      ],
+      "bbox_pixels": [
+        1386,
+        -68,
+        1677,
+        620
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "WebApp 2 Service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.33,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        581,
+        474,
+        698,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.43,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        775,
+        474,
+        891,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.53,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        969,
+        474,
+        1085,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.69,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1279,
+        474,
+        1396,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.79,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1473,
+        474,
+        1589,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.89,
+        0.35,
+        0.06,
+        0.08
+      ],
+      "bbox_pixels": [
+        1667,
+        474,
+        1783,
+        597
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Pod 3",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTPS",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 6,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 7,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 11,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 12,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 13,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

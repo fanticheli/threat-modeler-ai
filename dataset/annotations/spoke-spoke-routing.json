@@ -1,0 +1,292 @@
+{
+  "image_id": "spoke-spoke-routing",
+  "file_name": "azure/spoke-spoke-routing.png",
+  "width": 2446,
+  "height": 462,
+  "provider": "azure",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.25,
+        0.5,
+        0.45,
+        0.8
+      ],
+      "bbox_pixels": [
+        61,
+        46,
+        1161,
+        415
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.25,
+        0.35,
+        0.35,
+        0.25
+      ],
+      "bbox_pixels": [
+        183,
+        103,
+        1039,
+        219
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Resource subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.12,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        195,
+        166,
+        391,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.25,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        513,
+        166,
+        709,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.38,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        831,
+        166,
+        1027,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.5,
+        0.5,
+        0.2,
+        0.45
+      ],
+      "bbox_pixels": [
+        978,
+        127,
+        1467,
+        334
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Hub virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 18,
+      "category_name": "firewall",
+      "bbox": [
+        0.5,
+        0.58,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1125,
+        240,
+        1320,
+        295
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Azure Firewall",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 20,
+      "category_name": "vpc",
+      "bbox": [
+        0.75,
+        0.5,
+        0.45,
+        0.8
+      ],
+      "bbox_pixels": [
+        1284,
+        46,
+        2384,
+        415
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Spoke virtual network",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 21,
+      "category_name": "subnet",
+      "bbox": [
+        0.75,
+        0.35,
+        0.35,
+        0.25
+      ],
+      "bbox_pixels": [
+        1406,
+        103,
+        2262,
+        219
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Resource subnet",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.62,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1418,
+        166,
+        1614,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.75,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1736,
+        166,
+        1932,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.88,
+        0.42,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        2054,
+        166,
+        2250,
+        221
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Virtual Machine",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 8,
+      "to_id": 6,
+      "protocol": "Peering",
+      "bidirectional": false
+    },
+    {
+      "from_id": 6,
+      "to_id": 8,
+      "protocol": "Peering",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

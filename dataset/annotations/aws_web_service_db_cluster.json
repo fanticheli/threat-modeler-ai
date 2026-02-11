@@ -1,0 +1,150 @@
+{
+  "image_id": "aws_web_service_db_cluster",
+  "file_name": "aws/aws_web_service_db_cluster.png",
+  "width": 1160,
+  "height": 912,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 28,
+      "category_name": "dns",
+      "bbox": [
+        0.25,
+        0.53,
+        0.15,
+        0.18
+      ],
+      "bbox_pixels": [
+        203,
+        401,
+        377,
+        565
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Route53 DNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 8,
+      "category_name": "container",
+      "bbox": [
+        0.47,
+        0.53,
+        0.15,
+        0.18
+      ],
+      "bbox_pixels": [
+        458,
+        401,
+        632,
+        565
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "ECS web service",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.68,
+        0.53,
+        0.15,
+        0.18
+      ],
+      "bbox_pixels": [
+        701,
+        401,
+        875,
+        565
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "primary",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.88,
+        0.33,
+        0.15,
+        0.18
+      ],
+      "bbox_pixels": [
+        933,
+        218,
+        1107,
+        383
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "replica1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.88,
+        0.73,
+        0.15,
+        0.18
+      ],
+      "bbox_pixels": [
+        933,
+        583,
+        1107,
+        747
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "replica2",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 5,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

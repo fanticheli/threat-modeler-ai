@@ -1,0 +1,122 @@
+{
+  "image_id": "EC2%20State%20Change%20Slack",
+  "file_name": "aws/EC2%20State%20Change%20Slack.png",
+  "width": 1920,
+  "height": 1080,
+  "provider": "aws",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 10,
+      "category_name": "lambda_function",
+      "bbox": [
+        0.7,
+        0.35,
+        0.12,
+        0.15
+      ],
+      "bbox_pixels": [
+        1228,
+        297,
+        1459,
+        459
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Lambda",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 27,
+      "category_name": "external_service",
+      "bbox": [
+        0.35,
+        0.4,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        576,
+        388,
+        768,
+        475
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Amazon SNS",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.55,
+        0.6,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        979,
+        594,
+        1132,
+        702
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Amazon EC2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.85,
+        0.5,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1555,
+        496,
+        1708,
+        583
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Slack",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 3,
+      "protocol": null,
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": null,
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}

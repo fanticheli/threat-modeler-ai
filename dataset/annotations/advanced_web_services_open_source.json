@@ -1,0 +1,380 @@
+{
+  "image_id": "advanced_web_services_open_source",
+  "file_name": "aws/advanced_web_services_open_source.png",
+  "width": 1665,
+  "height": 1156,
+  "provider": "generic",
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 4,
+      "category_name": "load_balancer",
+      "bbox": [
+        0.15,
+        0.55,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        183,
+        566,
+        316,
+        705
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Nginx Ingress",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 2,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.31,
+        0.28,
+        0.08,
+        0.18
+      ],
+      "bbox_pixels": [
+        449,
+        219,
+        582,
+        427
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "grpc1",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 3,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.31,
+        0.52,
+        0.08,
+        0.18
+      ],
+      "bbox_pixels": [
+        449,
+        497,
+        582,
+        705
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "grpc2",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 4,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.31,
+        0.76,
+        0.08,
+        0.18
+      ],
+      "bbox_pixels": [
+        449,
+        774,
+        582,
+        982
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "grpc3",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 5,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.55,
+        0.28,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        849,
+        254,
+        982,
+        393
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "session",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 6,
+      "category_id": 13,
+      "category_name": "cache",
+      "bbox": [
+        0.78,
+        0.28,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1232,
+        254,
+        1365,
+        393
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 7,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.55,
+        0.52,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        849,
+        531,
+        982,
+        670
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "users",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 8,
+      "category_id": 11,
+      "category_name": "database_sql",
+      "bbox": [
+        0.78,
+        0.52,
+        0.08,
+        0.12
+      ],
+      "bbox_pixels": [
+        1232,
+        531,
+        1365,
+        670
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "replica",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 9,
+      "category_id": 26,
+      "category_name": "logging",
+      "bbox": [
+        0.55,
+        0.76,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        832,
+        832,
+        999,
+        924
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Fluentd logging",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 10,
+      "category_id": 14,
+      "category_name": "queue",
+      "bbox": [
+        0.8,
+        0.76,
+        0.1,
+        0.08
+      ],
+      "bbox_pixels": [
+        1248,
+        832,
+        1415,
+        924
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Kafka pub/sub stream",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 11,
+      "category_id": 7,
+      "category_name": "microservice",
+      "bbox": [
+        0.95,
+        0.76,
+        0.08,
+        0.08
+      ],
+      "bbox_pixels": [
+        1515,
+        832,
+        1648,
+        924
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "analytics",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 12,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.88,
+        0.45,
+        0.1,
+        0.1
+      ],
+      "bbox_pixels": [
+        1381,
+        462,
+        1548,
+        578
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Promtheus metrics",
+        "auto_annotated": true
+      }
+    },
+    {
+      "id": 13,
+      "category_id": 25,
+      "category_name": "monitoring",
+      "bbox": [
+        0.95,
+        0.45,
+        0.08,
+        0.1
+      ],
+      "bbox_pixels": [
+        1515,
+        462,
+        1648,
+        578
+      ],
+      "confidence": 0.8,
+      "attributes": {
+        "label": "Grafana monitoring",
+        "auto_annotated": true
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 1,
+      "to_id": 4,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 3,
+      "to_id": 7,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 4,
+      "to_id": 9,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 8,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 8,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 9,
+      "to_id": 10,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 10,
+      "to_id": 11,
+      "protocol": "TCP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 5,
+      "to_id": 12,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 7,
+      "to_id": 12,
+      "protocol": "HTTP",
+      "bidirectional": false
+    },
+    {
+      "from_id": 12,
+      "to_id": 13,
+      "protocol": "HTTP",
+      "bidirectional": false
+    }
+  ],
+  "metadata": {
+    "auto_annotated": true,
+    "model": "claude-sonnet-4-20250514",
+    "needs_review": true
+  }
+}
