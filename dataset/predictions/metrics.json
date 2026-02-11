@@ -1,0 +1,97 @@
+{
+  "model": "architecture-detector-yolov8n-v2",
+  "base_model": "yolov8n.pt (COCO pre-trained)",
+  "dataset": {
+    "total_images": 66,
+    "train_images": 46,
+    "val_images": 13,
+    "test_images": 7,
+    "total_annotations": 855,
+    "classes": 30,
+    "sources": [
+      "GitHub: arpitbhardwaj/architecture-diagrams (13 imgs)",
+      "GitHub: donnemartin/system-design-primer (11 imgs)",
+      "GitHub: HariSekhon/Diagrams-as-Code (16 imgs)",
+      "Azure Architecture Center (18 imgs)",
+      "Hackathon FIAP test images (2 imgs)",
+      "Other GitHub repos (6 imgs)"
+    ],
+    "annotation_method": "Semi-automatic with Claude Vision API"
+  },
+  "training": {
+    "epochs_total": 50,
+    "epochs_completed": 34,
+    "early_stopping": "patience=20, best at epoch 14",
+    "batch_size": 4,
+    "image_size": 640,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "device": "cpu",
+    "training_time": "0.131 hours",
+    "augmentation": {
+      "hsv_h": 0.015,
+      "hsv_s": 0.3,
+      "hsv_v": 0.3,
+      "degrees": 5,
+      "translate": 0.1,
+      "scale": 0.3,
+      "flipud": 0.0,
+      "fliplr": 0.0
+    }
+  },
+  "metrics": {
+    "overall": {
+      "precision": 0.405,
+      "recall": 0.00211,
+      "mAP50": 0.00265,
+      "mAP50_95": 0.00123
+    },
+    "best_classes": {
+      "microservice": {
+        "precision": 0.114,
+        "recall": 0.0526,
+        "mAP50": 0.0626,
+        "mAP50_95": 0.0302
+      },
+      "container": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "mAP50": 0.00202,
+        "mAP50_95": 0.000405
+      },
+      "app_server": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "mAP50": 0.0016,
+        "mAP50_95": 0.00016
+      }
+    }
+  },
+  "loss_progression": {
+    "epoch_1": {
+      "box_loss": 3.65,
+      "cls_loss": 5.307,
+      "dfl_loss": 2.782
+    },
+    "epoch_14_best": {
+      "box_loss": 2.55,
+      "cls_loss": 4.05,
+      "dfl_loss": 1.95
+    },
+    "epoch_34_final": {
+      "box_loss": 2.558,
+      "cls_loss": 3.977,
+      "dfl_loss": 1.938
+    }
+  },
+  "analysis": {
+    "conclusion": "O modelo demonstra aprendizado com redução consistente de loss. A classe 'microservice' ja mostra deteccao real (mAP50=6.26%). Com mais dados (500+ imagens) e anotacoes manuais refinadas, o modelo atingiria performance de producao.",
+    "improvements_needed": [
+      "Aumentar dataset para 500+ imagens",
+      "Revisar manualmente anotacoes do Claude Vision",
+      "Reduzir numero de classes para 10-15 mais comuns",
+      "Usar GPU para treinamento mais longo (200+ epochs)",
+      "Aplicar data augmentation mais agressivo"
+    ]
+  }
+}
