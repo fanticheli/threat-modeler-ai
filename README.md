@@ -21,13 +21,32 @@ O Threat Modeler AI e uma ferramenta que permite:
 
 ## Documentacao
 
-- [Documentacao Completa da Solucao](./docs/DOCUMENTACAO-SOLUCAO.md)
-- [Arquitetura do Sistema](./docs/architecture/README.md)
-- [Design System](./docs/design-system/README.md)
-- [Decisoes de Arquitetura (ADRs)](./docs/adr/README.md)
-- [Documentacao da API](./docs/api/README.md)
-- [Plano de Dataset e Treinamento](./docs/PLANO-DATASET-TREINAMENTO.md)
-- **[Como Subir o Projeto Local](./README-SETUP.md)**
+> **Comece por aqui** — os links essenciais para entender e rodar o projeto.
+
+### Como rodar
+
+| Documento | Descricao |
+|-----------|-----------|
+| **[Guia de Provisionamento Local](./docs/GUIA-PROVISIONAMENTO-LOCAL.md)** | Passo a passo completo com Docker Compose (sobe tudo com 1 comando) |
+| [Setup Manual](./README-SETUP.md) | Alternativa: subir cada servico manualmente |
+
+### Documentacao da Solucao
+
+| Documento | Descricao |
+|-----------|-----------|
+| **[Documentacao Completa da Solucao](./docs/DOCUMENTACAO-SOLUCAO.md)** | Documento principal: visao geral, decisoes, metricas, resultados |
+| [Arquitetura do Sistema](./docs/architecture/README.md) | Diagrama de componentes, fluxo de dados, integracao entre servicos |
+| [Documentacao da API](./docs/api/README.md) | Endpoints REST, schemas de request/response, status codes |
+| [Metodologia STRIDE](./docs/stride-methodology.md) | Como a analise de ameacas STRIDE e aplicada |
+
+### Decisoes Tecnicas e Treinamento
+
+| Documento | Descricao |
+|-----------|-----------|
+| [Decisoes de Arquitetura (ADRs)](./docs/adr/README.md) | ADR-001 a ADR-006: multi-repo, YOLO microservice, pipeline hibrido, etc |
+| [Plano de Dataset e Treinamento](./docs/PLANO-DATASET-TREINAMENTO.md) | Pipeline de dataset, anotacao, treinamento YOLOv8, metricas |
+| [Design System](./docs/design-system/README.md) | Paleta de cores, tipografia, componentes UI |
+| [Backlog Multicloud](./docs/BACKLOG-MULTICLOUD.md) | Roadmap futuro: suporte a Azure, GCP, multi-provider |
 
 ## Stack Tecnologica
 
@@ -80,32 +99,30 @@ Se o YOLO service nao estiver disponivel, o sistema funciona normalmente apenas 
 
 ## Quick Start
 
-Veja o guia completo em **[README-SETUP.md](./README-SETUP.md)**.
+Guia completo: **[Guia de Provisionamento Local](./docs/GUIA-PROVISIONAMENTO-LOCAL.md)**
 
 ```bash
-# Clone os 3 repos
+# 1. Clone os 3 repos na mesma pasta
 git clone https://github.com/fanticheli/threat-modeler-ai.git
 git clone https://github.com/fanticheli/threat-modeler-ai-backend.git
 git clone https://github.com/fanticheli/threat-modeler-ai-frontend.git
 
-# Suba com Docker Compose
+# 2. Configure a API key
 cd threat-modeler-ai
-export ANTHROPIC_API_KEY=sua_chave
-docker-compose up -d
+echo "ANTHROPIC_API_KEY=sua_chave_aqui" > .env
 
-# Suba o frontend
-cd ../threat-modeler-ai-frontend
-npm install && npm run dev
+# 3. Suba tudo com Docker Compose (5 servicos)
+docker compose up -d --build
 
-# Acesse http://localhost:8080
+# 4. Acesse http://localhost:8080
 ```
 
 ## Dataset e Treinamento
 
 - **66 imagens** de diagramas de arquitetura (AWS, Azure, GCP, generic)
-- **30 classes** de componentes definidas
-- **Anotacao automatica** com Claude Vision
-- **Treinamento YOLOv8 nano** com transfer learning
+- **10 classes consolidadas** de componentes (server, database, network, storage, security, serverless, queue, monitoring, user, external)
+- **855 anotacoes** geradas semi-automaticamente com Claude Vision
+- **Treinamento YOLOv8 small (v5)** com transfer learning (150 epochs completos, mAP50=83.9%)
 - **Modelo integrado** ao backend via microsservico FastAPI
 
 Detalhes em: [Plano de Dataset e Treinamento](./docs/PLANO-DATASET-TREINAMENTO.md)

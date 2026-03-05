@@ -16,6 +16,9 @@ Content-Type: multipart/form-data
 
 image: File (required) - Imagem PNG, JPG, JPEG, GIF ou WebP
 language: string (optional) - "pt-BR" ou "en-US" (default: "pt-BR")
+
+Query params:
+skipQualityCheck: boolean (optional) - Pula validacao de qualidade da imagem
 ```
 
 **Response:**
@@ -24,9 +27,50 @@ language: string (optional) - "pt-BR" ou "en-US" (default: "pt-BR")
   "id": "507f1f77bcf86cd799439011",
   "imageUrl": "/uploads/abc123.jpg",
   "imageName": "arquitetura.jpg",
-  "status": "processing"
+  "status": "processing",
+  "quality": {
+    "isValid": true,
+    "score": 85,
+    "details": {
+      "resolution": "ok",
+      "fileSize": "ok",
+      "sharpness": "ok",
+      "contrast": "ok"
+    }
+  }
 }
 ```
+
+#### POST /upload/validate
+
+Valida a qualidade de uma imagem antes do upload.
+
+**Request:**
+```
+Content-Type: multipart/form-data
+
+image: File (required) - Imagem PNG, JPG, JPEG, GIF ou WebP
+```
+
+**Response:**
+```json
+{
+  "isValid": true,
+  "score": 85,
+  "details": {
+    "resolution": "ok",
+    "fileSize": "ok",
+    "sharpness": "ok",
+    "contrast": "ok"
+  }
+}
+```
+
+#### GET /upload/image/:id
+
+Serve a imagem de uma analise pelo ID.
+
+**Response:** `image/png` ou `image/jpeg`
 
 ---
 
@@ -70,13 +114,22 @@ Busca uma análise específica com todos os detalhes.
   "status": "completed",
   "detectedProvider": "aws",
   "existingMitigations": ["AWS WAF", "AWS Shield"],
+  "detectionMeta": {
+    "yoloAvailable": true,
+    "yoloDetections": 3,
+    "claudeDetections": 8,
+    "mergedComponents": 10,
+    "yoloInferenceTimeMs": 128.5
+  },
   "components": [
     {
       "id": "alb",
       "name": "Application Load Balancer",
       "type": "load_balancer",
       "provider": "aws",
-      "description": "Distribui tráfego entre instâncias",
+      "description": "Distribui trafego entre instancias",
+      "detectionSource": "hybrid",
+      "yoloConfidence": 0.45,
       "existingSecurityControls": ["SSL/TLS"]
     }
   ],
@@ -108,8 +161,23 @@ Busca uma análise específica com todos os detalhes.
       ]
     }
   ],
+  "executiveSummary": "Resumo executivo gerado pela IA...",
   "summary": { ... },
   "createdAt": "2024-02-03T10:00:00.000Z"
+}
+```
+
+#### GET /analysis/queue-status
+
+Retorna o status atual da fila de processamento.
+
+**Response:**
+```json
+{
+  "waiting": 0,
+  "active": 1,
+  "completed": 5,
+  "failed": 0
 }
 ```
 

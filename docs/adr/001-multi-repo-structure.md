@@ -10,8 +10,8 @@ Precisávamos decidir como organizar o código do projeto. As opções eram:
 
 ## Decisão
 Optamos por **multi-repo** com 3 repositórios:
-- `threat-modeler-ai` - Documentação e arquitetura
-- `threat-modeler-ai-frontend` - Aplicação React + Vite
+- `threat-modeler-ai` - Documentacao, Dataset, YOLO Service e Docker Compose
+- `threat-modeler-ai-frontend` - Aplicacao React + Vite
 - `threat-modeler-ai-backend` - API NestJS
 
 ## Consequências

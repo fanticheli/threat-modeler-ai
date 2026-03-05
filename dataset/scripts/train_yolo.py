@@ -2,17 +2,41 @@
 """
 Script de treinamento do modelo YOLO v8 para detecção de componentes de arquitetura.
 
+v4: YOLOv8s (small), hiperparâmetros otimizados, auto-detect GPU,
+    usa imagens pré-processadas e dados augmentados para balanceamento.
+
 Pré-requisitos:
     pip install ultralytics
 
 Uso:
-    python train_yolo.py [--epochs 100] [--batch 16] [--device cuda]
+    python train_yolo.py [--epochs 150] [--batch 16] [--device auto]
 """
 
 import argparse
 from pathlib import Path
 import shutil
-import os
+
+
+def detect_device(requested: str) -> str:
+    """Auto-detecta GPU disponível."""
+    if requested != "auto":
+        return requested
+
+    try:
+        import torch
+        if torch.cuda.is_available():
+            gpu_name = torch.cuda.get_device_name(0)
+            print(f"GPU detectada: {gpu_name}")
+            return "cuda"
+        elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            print("Apple MPS detectado")
+            return "mps"
+    except ImportError:
+        pass
+
+    print("Nenhuma GPU detectada, usando CPU")
+    return "cpu"
+
 
 def setup_yolo_structure():
     """Reorganiza o dataset para o formato esperado pelo YOLO."""
@@ -24,11 +48,18 @@ def setup_yolo_structure():
         (yolo_dir / split / "images").mkdir(parents=True, exist_ok=True)
         (yolo_dir / split / "labels").mkdir(parents=True, exist_ok=True)
 
-    # Copiar imagens e labels para cada split
+    # Preferir imagens pré-processadas se existirem
+    images_processed = base_dir / "images_processed"
+    images_dir = images_processed if images_processed.exists() else base_dir / "images"
     splits_dir = base_dir / "splits"
-    images_dir = base_dir / "images"
     annotations_dir = base_dir / "annotations"
 
+    if images_processed.exists():
+        print(f"Usando imagens pré-processadas de: {images_processed}")
+    else:
+        print(f"Usando imagens originais de: {images_dir}")
+
+    copied = 0
     for split in ["train", "val", "test"]:
         split_file = splits_dir / f"{split}.txt"
         if not split_file.exists():
@@ -38,70 +69,61 @@ def setup_yolo_structure():
             image_paths = [line.strip() for line in f if line.strip()]
 
         for img_rel_path in image_paths:
+            # Tentar imagem pré-processada primeiro
             img_path = base_dir / img_rel_path
+            if images_processed.exists():
+                processed_path = images_processed / Path(img_rel_path).relative_to("images")
+                if processed_path.exists():
+                    img_path = processed_path
+
             if not img_path.exists():
                 print(f"Warning: {img_path} not found")
                 continue
 
             # Copiar imagem
             dest_img = yolo_dir / split / "images" / img_path.name
-            if not dest_img.exists():
-                shutil.copy2(img_path, dest_img)
+            shutil.copy2(img_path, dest_img)
+            copied += 1
 
             # Copiar label (mesmo nome, extensão .txt)
             label_name = img_path.stem + ".txt"
             label_path = annotations_dir / label_name
             if label_path.exists():
                 dest_label = yolo_dir / split / "labels" / label_name
-                if not dest_label.exists():
-                    shutil.copy2(label_path, dest_label)
+                shutil.copy2(label_path, dest_label)
 
-    print(f"Dataset prepared at: {yolo_dir}")
+    print(f"Dataset prepared at: {yolo_dir} ({copied} imagens copiadas)")
+
+    # Contar imagens augmentadas já presentes no train
+    aug_images = list((yolo_dir / "train" / "images").glob("*_aug_*"))
+    if aug_images:
+        print(f"Imagens augmentadas encontradas no train: {len(aug_images)}")
+
     return yolo_dir
 
 
 def create_data_yaml(yolo_dir: Path):
     """Cria o arquivo data.yaml para o YOLO."""
-    yaml_content = f"""# Architecture Components Detection Dataset
+    yaml_content = f"""# Architecture Components Detection Dataset (10 consolidated classes)
 path: {yolo_dir.absolute()}
 train: train/images
 val: val/images
 test: test/images
 
-# Classes
+# Classes (consolidated from 30 to 10 for better per-class sample density)
 names:
-  0: user
-  1: web_browser
-  2: mobile_app
-  3: api_gateway
-  4: load_balancer
-  5: web_server
-  6: app_server
-  7: microservice
-  8: container
-  9: kubernetes
-  10: lambda_function
-  11: database_sql
-  12: database_nosql
-  13: cache
-  14: queue
-  15: storage_object
-  16: storage_block
-  17: cdn
-  18: firewall
-  19: waf
-  20: vpc
-  21: subnet
-  22: iam
-  23: kms
-  24: secrets_manager
-  25: monitoring
-  26: logging
-  27: external_service
-  28: dns
-  29: email_service
+  0: server
+  1: database
+  2: network
+  3: storage
+  4: security
+  5: serverless
+  6: queue
+  7: monitoring
+  8: user
+  9: external
 
-nc: 30
+nc: 10
 """
 
     yaml_path = yolo_dir / "data.yaml"
@@ -112,56 +134,69 @@ nc: 30
     return yaml_path
 
 
-def train(data_yaml: Path, epochs: int = 100, batch: int = 16, device: str = "cpu"):
-    """Treina o modelo YOLO v8."""
+def train(data_yaml: Path, epochs: int = 150, batch: int = 16, device: str = "cpu"):
+    """Treina o modelo YOLO v8s com hiperparâmetros otimizados."""
     try:
         from ultralytics import YOLO
     except ImportError:
         print("Error: ultralytics not installed. Run: pip install ultralytics")
         return None
 
-    # Usar modelo pré-treinado como base
-    model = YOLO("yolov8n.pt")  # nano model (mais rápido para teste)
+    # YOLOv8 Small — 2.5x mais parâmetros que nano
+    model = YOLO("yolov8s.pt")
 
     print("\n" + "=" * 50)
-    print("Starting YOLO Training")
+    print("Starting YOLO Training (v5)")
     print("=" * 50)
+    print(f"  Model: YOLOv8s (small)")
     print(f"  Data: {data_yaml}")
     print(f"  Epochs: {epochs}")
     print(f"  Batch size: {batch}")
     print(f"  Device: {device}")
     print("=" * 50 + "\n")
 
-    # Treinar
     results = model.train(
         data=str(data_yaml),
         epochs=epochs,
         batch=batch,
         imgsz=640,
         device=device,
-        patience=20,  # Early stopping
+        patience=50,       # Mais paciência para convergir (era 30)
         save=True,
         plots=True,
 
-        # Augmentation (reduzido para diagramas)
-        hsv_h=0.015,
+        # === Loss weights (rebalanceados) ===
+        # cls aumentado de 0.5→1.5 para forçar aprendizado de classificação
+        # (recall era ~0% no v3 por falta de ênfase em cls)
+        box=5.0,            # Era 7.5 — reduzido para equilibrar com cls
+        cls=1.5,            # Era 0.5 — TRIPLICADO para melhorar recall
+        dfl=1.5,            # Mantido
+
+        # === Augmentation (tuned for architecture diagrams) ===
+        hsv_h=0.015,        # Hue mínima (cores importam em diagramas)
         hsv_s=0.3,
         hsv_v=0.3,
         degrees=5,
         translate=0.1,
         scale=0.3,
-        flipud=0.0,  # Não flipar (diagramas têm orientação)
+        flipud=0.0,         # Sem flip (diagramas têm orientação)
         fliplr=0.0,
+        mixup=0.2,
+        copy_paste=0.3,
+        close_mosaic=10,    # Era 20 — desligar mosaic mais cedo para fine-tuning
 
-        # Otimização
+        # === Otimização (mais agressiva) ===
         optimizer="AdamW",
-        lr0=0.001,
-        lrf=0.01,
+        lr0=0.01,           # Era 0.001 — LR inicial mais alta
+        lrf=0.01,           # Fator final de LR
+        cos_lr=True,        # Era False — cosine annealing para decaimento suave
+        warmup_epochs=5,    # Era 3 — warmup mais longo com dataset pequeno
+        warmup_momentum=0.8,
         weight_decay=0.0005,
 
         # Nome do projeto
         project="runs/train",
-        name="architecture_detector",
+        name="architecture_detector_v5",
     )
 
     print("\n" + "=" * 50)
@@ -203,13 +238,22 @@ def export_model(model_path: Path, format: str = "onnx"):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Train YOLO for architecture detection")
-    parser.add_argument("--epochs", type=int, default=50, help="Number of epochs")
-    parser.add_argument("--batch", type=int, default=8, help="Batch size")
-    parser.add_argument("--device", type=str, default="cpu", help="Device (cpu/cuda/mps)")
+    parser = argparse.ArgumentParser(description="Train YOLO for architecture detection (v4)")
+    parser.add_argument("--epochs", type=int, default=150, help="Number of epochs")
+    parser.add_argument("--batch", type=int, default=16, help="Batch size (16 GPU, 8 CPU)")
+    parser.add_argument("--device", type=str, default="auto", help="Device (auto/cpu/cuda/mps)")
     parser.add_argument("--eval-only", action="store_true", help="Only evaluate existing model")
     parser.add_argument("--export", type=str, help="Export model to format (onnx/torchscript)")
     args = parser.parse_args()
+
+    # Auto-detect device
+    device = detect_device(args.device)
+
+    # Ajustar batch para CPU se necessário
+    batch = args.batch
+    if device == "cpu" and batch > 8:
+        print(f"CPU detectada: reduzindo batch de {batch} para 8")
+        batch = 8
 
     # Setup
     print("Setting up dataset structure...")
@@ -217,7 +261,7 @@ def main():
     data_yaml = create_data_yaml(yolo_dir)
 
     # Check for existing model
-    best_model = Path("runs/train/architecture_detector/weights/best.pt")
+    best_model = Path("runs/train/architecture_detector_v5/weights/best.pt")
 
     if args.eval_only and best_model.exists():
         evaluate(best_model, data_yaml)
@@ -225,7 +269,7 @@ def main():
         export_model(best_model, args.export)
     else:
         # Train
-        train(data_yaml, epochs=args.epochs, batch=args.batch, device=args.device)
+        train(data_yaml, epochs=args.epochs, batch=batch, device=device)
 
         # Evaluate
         if best_model.exists():

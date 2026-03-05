@@ -2,7 +2,7 @@
 
 ## Visao Geral
 
-O Threat Modeler AI e composto por quatro servicos principais que se comunicam via REST API:
+O Threat Modeler AI e composto por multiplos servicos que se comunicam via REST API, drivers nativos e filas:
 
 ```
 ┌──────────────┐         ┌──────────────┐         ┌──────────────┐
@@ -36,6 +36,7 @@ O Threat Modeler AI e composto por quatro servicos principais que se comunicam v
 - Framer Motion (animacoes)
 - React Query (cache/fetching)
 - React Dropzone
+- Recharts (graficos)
 
 ### Backend (NestJS)
 
@@ -57,15 +58,17 @@ O Threat Modeler AI e composto por quatro servicos principais que se comunicam v
 ### YOLO Service (FastAPI)
 
 **Responsabilidades:**
-- Carregar modelo YOLO treinado (best.pt) no startup
+- Carregar modelo YOLO v5 treinado (best.pt, YOLOv8s, 22 MB) no startup
 - Executar inferencia em imagens recebidas via HTTP
 - Retornar deteccoes com bounding boxes, classes e confianca
-- Mapear classes YOLO para tipos do backend
+- Mapear 10 classes YOLO para tipos do backend
+
+**Modelo em producao:** YOLOv8 small (v5) — mAP50=83.9%, recall=82%, precision=99.7%
 
 **Tecnologias:**
 - Python 3.11
 - FastAPI + Uvicorn
-- Ultralytics (YOLOv8)
+- Ultralytics (YOLOv8s)
 - Pillow (processamento de imagens)
 
 **Endpoints:**
@@ -102,7 +105,7 @@ User ──► Frontend ──► POST /api/upload ──► Backend
 Queue Worker (analysis.processor.ts)
       │
       ├── Fase 1: YOLO Service (HTTP POST /predict)
-      │   └── Retorna bounding boxes + classes + confianca (~200ms)
+      │   └── Retorna bounding boxes + classes + confianca (~200ms, mAP50=83.9%)
       │
       ├── Fase 2: Claude Vision (Anthropic API)
       │   └── Retorna componentes + descricoes + conexoes (~5-10s)
@@ -146,6 +149,4 @@ Ver [ADRs](../adr/README.md) para detalhes sobre decisoes tecnicas.
 
 ## Diagramas
 
-- [Diagrama de Contexto](./context-diagram.md)
-- [Diagrama de Containers](./container-diagram.md)
-- [Fluxo de Dados](./data-flow.md)
+Os fluxos de dados e diagramas de contexto estao documentados acima nesta pagina e na [Documentacao da Solucao](../DOCUMENTACAO-SOLUCAO.md).

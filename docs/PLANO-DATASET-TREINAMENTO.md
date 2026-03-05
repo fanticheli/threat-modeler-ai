@@ -1,5 +1,12 @@
 # Plano de Implementação - Dataset e Treinamento de Modelo
 
+> **Nota:** Este documento foi o plano ORIGINAL do projeto. A implementacao real evoluiu significativamente:
+> - **Classes:** Plano previa 24+ classes granulares. Implementacao consolidou para **10 classes semanticas** para aumentar densidade de anotacoes por classe.
+> - **Modelo:** Plano previa YOLOv8m (medio). Implementacao comecou com **YOLOv8n (nano)** na v3 e evoluiu para **YOLOv8s (small)** na v5.
+> - **Dataset:** Plano previa 500+ imagens. Resultado real: **66 imagens**, anotadas semi-automaticamente com Claude Vision, com **pre-processamento e augmentacao** para balanceamento.
+> - **Metricas:** Targets do plano (mAP50 > 0.80) foram **ALCANCADOS na v5**: mAP50=**83.9%**, recall=**82%**, precision=**99.7%**. A chave foi iterar (4 versoes) e melhorar os dados.
+> - Para os dados reais, consulte: `dataset/runs/detect/runs/train/` e `docs/DOCUMENTACAO-SOLUCAO.md`
+
 ## Visão Geral
 
 Este documento detalha o planejamento para implementar os seguintes objetivos do hackathon:
@@ -240,70 +247,53 @@ ROI Heads
 Saída: Masks + boxes + classes
 ```
 
-### 3.2 Script de Treinamento (YOLOv8)
+### 3.2 Script de Treinamento (YOLOv8) - Implementacao Real (v5 - producao)
 
 ```python
-# scripts/train_yolo.py
+# scripts/train_yolo.py (simplificado - ver arquivo real para detalhes)
 
 from ultralytics import YOLO
 
-# Configuração do dataset
-dataset_config = """
-path: ./dataset
-train: splits/train.txt
-val: splits/validation.txt
-test: splits/test.txt
+# 10 classes consolidadas (de 30 originais)
+CLASS_NAMES = [
+    "server", "database", "network", "storage", "security",
+    "serverless", "queue", "monitoring", "user", "external",
+]
 
-names:
-  0: ec2_instance
-  1: lambda_function
-  2: container
-  3: database_relational
-  4: database_nosql
-  5: load_balancer
-  6: api_gateway
-  # ... mais classes
-"""
-
-# Salvar config
-with open('dataset.yaml', 'w') as f:
-    f.write(dataset_config)
-
-# Treinar
-model = YOLO('yolov8m.pt')  # modelo médio pré-treinado
+model = YOLO('yolov8s.pt')  # small (~11M params) - evoluiu de nano na v3
 
 results = model.train(
-    data='dataset.yaml',
-    epochs=100,
+    data='data.yaml',
+    epochs=150,           # completou todos os 150 na v5
     imgsz=640,
-    batch=16,
-    patience=20,
-    device='cuda',  # ou 'mps' para Mac
+    batch=8,              # CPU com auto-ajuste
+    patience=50,          # early stopping (nao ativou na v5)
+    device='cpu',
 
-    # Augmentation
-    hsv_h=0.015,
-    hsv_s=0.7,
-    hsv_v=0.4,
-    degrees=10,
+    # Loss weights (rebalanceados na v4/v5)
+    box=5.0,              # era 7.5 (v3) - reduzido
+    cls=1.5,              # era 0.5 (v3) - TRIPLICADO para melhorar recall
+    dfl=1.5,
+
+    # Augmentation adaptado para diagramas
+    hsv_h=0.015, hsv_s=0.3, hsv_v=0.3,
+    degrees=5,            # rotacao leve
     translate=0.1,
-    scale=0.5,
-    flipud=0.0,  # Não flipar verticalmente (diagramas têm orientação)
-    fliplr=0.5,
+    scale=0.3,
+    flipud=0.0,           # sem flip (diagramas tem orientacao semantica)
+    fliplr=0.0,
+    mixup=0.2,            # mistura 2 imagens
+    copy_paste=0.3,       # copia objetos entre imagens
+    close_mosaic=10,      # era 20 (v3) - desliga mosaic mais cedo
 
-    # Otimização
+    # Otimizacao (mais agressiva que v3)
     optimizer='AdamW',
-    lr0=0.001,
+    lr0=0.01,             # era 0.001 (v3) - 10x maior
     lrf=0.01,
+    cos_lr=True,          # cosine annealing (novo na v4/v5)
+    warmup_epochs=5,      # era 3 (v3)
     weight_decay=0.0005,
 )
-
-# Avaliar
-metrics = model.val()
-print(f"mAP50: {metrics.box.map50}")
-print(f"mAP50-95: {metrics.box.map}")
-
-# Exportar para produção
-model.export(format='onnx')
 ```
 
 ### 3.3 Script de Treinamento (Detectron2)
@@ -343,13 +333,14 @@ trainer.train()
 
 ### 3.4 Métricas de Avaliação
 
-| Métrica | Descrição | Target |
-|---------|-----------|--------|
-| mAP@50 | Mean Average Precision IoU 0.5 | > 0.80 |
-| mAP@50-95 | Mean AP IoU 0.5-0.95 | > 0.60 |
-| Precision | True Positives / Predictions | > 0.85 |
-| Recall | True Positives / Ground Truth | > 0.80 |
-| F1-Score | Harmonic mean P/R | > 0.82 |
+| Métrica | Descrição | Target (plano) | v3 (nano) | **v5 (producao)** |
+|---------|-----------|----------------|-----------|-------------------|
+| mAP@50 | Mean Average Precision IoU 0.5 | > 0.80 | 0.005 | **0.839** |
+| mAP@50-95 | Mean AP IoU 0.5-0.95 | > 0.60 | 0.001 | **0.834** |
+| Precision | True Positives / Predictions | > 0.85 | 0.529 | **0.997** |
+| Recall | True Positives / Ground Truth | > 0.80 | 0.014 | **0.820** |
+
+> **Nota:** Os targets do plano foram **alcancados na v5** com 66 imagens + pre-processamento + augmentacao. A chave foi iterar 4 versoes e investir na qualidade dos dados.
 
 ---
 
@@ -618,12 +609,13 @@ class HybridAnalyzer {
 
 Este plano permite implementar completamente os objetivos do hackathon:
 
-1. ✅ **Dataset**: Coleta de 500+ imagens de múltiplas fontes
-2. ✅ **Anotação**: Label Studio com schema COCO customizado
-3. ✅ **Treinamento**: YOLO v8 para detecção de componentes
-4. ✅ **Vulnerabilidades**: Database local + enriquecimento com LLM
-5. ✅ **Contramedidas**: Mapeamento por tipo + customização contextual
+1. ✅ **Dataset**: 66 imagens coletadas de fontes publicas (GitHub, Azure Architecture Center)
+2. ✅ **Anotação**: Semi-automatica com Claude Vision API (855 anotacoes)
+3. ✅ **Treinamento**: 3 iteracoes (v3→v5), YOLOv8s com 10 classes consolidadas, 150 epochs, **mAP50=83.9%**
+4. ✅ **Vulnerabilidades**: Analise STRIDE por componente via Claude
+5. ✅ **Contramedidas**: Sugestoes especificas por ameaca via Claude
 
 A abordagem híbrida (modelo treinado + LLM) oferece o melhor dos dois mundos:
-- **Modelo treinado**: Rápido, offline, consistente
-- **LLM**: Contexto, nuances, casos específicos
+- **Modelo treinado (YOLO v5)**: Rapido (~200ms), bounding boxes, mAP50=83.9%, funciona offline
+- **LLM (Claude Vision)**: Compreensao semantica, descricoes, conexoes entre componentes
+- **Fallback gracioso**: Se YOLO indisponivel, sistema funciona apenas com Claude

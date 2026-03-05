@@ -12,6 +12,7 @@ import io
 import time
 import logging
 from pathlib import Path
+from collections import Counter
 from contextlib import asynccontextmanager
 from typing import List, Dict, Optional
 
@@ -32,78 +33,43 @@ FALLBACK_MODEL_PATH = (
     / "detect"
     / "runs"
     / "train"
-    / "architecture_detector"
+    / "architecture_detector_v5"
     / "weights"
     / "best.pt"
 )
 
 CATEGORY_NAMES = {
-    0: "user",
-    1: "web_browser",
-    2: "mobile_app",
-    3: "api_gateway",
-    4: "load_balancer",
-    5: "web_server",
-    6: "app_server",
-    7: "microservice",
-    8: "container",
-    9: "kubernetes",
-    10: "lambda_function",
-    11: "database_sql",
-    12: "database_nosql",
-    13: "cache",
-    14: "queue",
-    15: "storage_object",
-    16: "storage_block",
-    17: "cdn",
-    18: "firewall",
-    19: "waf",
-    20: "vpc",
-    21: "subnet",
-    22: "iam",
-    23: "kms",
-    24: "secrets_manager",
-    25: "monitoring",
-    26: "logging",
-    27: "external_service",
-    28: "dns",
-    29: "email_service",
+    0: "server",
+    1: "database",
+    2: "network",
+    3: "storage",
+    4: "security",
+    5: "serverless",
+    6: "queue",
+    7: "monitoring",
+    8: "user",
+    9: "external",
 }
 
 # Mapeamento de classes YOLO -> tipos do backend
 YOLO_TO_BACKEND_TYPE = {
-    "user": "user",
-    "web_browser": "user",
-    "mobile_app": "user",
-    "api_gateway": "api",
-    "load_balancer": "load_balancer",
-    "web_server": "server",
-    "app_server": "server",
-    "microservice": "server",
-    "container": "server",
-    "kubernetes": "server",
-    "lambda_function": "serverless",
-    "database_sql": "database",
-    "database_nosql": "database",
-    "cache": "cache",
+    "server": "server",
+    "database": "database",
+    "network": "network",
+    "storage": "storage",
+    "security": "security",
+    "serverless": "serverless",
     "queue": "queue",
-    "storage_object": "storage",
-    "storage_block": "storage",
-    "cdn": "cdn",
-    "firewall": "security",
-    "waf": "waf",
-    "vpc": "network",
-    "subnet": "network",
-    "iam": "security",
-    "kms": "security",
-    "secrets_manager": "security",
     "monitoring": "monitoring",
-    "logging": "monitoring",
-    "external_service": "external_service",
-    "dns": "network",
-    "email_service": "email",
+    "user": "user",
+    "external": "external_service",
 }
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
 logger = logging.getLogger("yolo-service")
 
 # ---------------------------------------------------------------------------
@@ -210,8 +176,10 @@ class HealthResponse(BaseModel):
 async def health_check():
     """Health check - verifica se o modelo esta carregado."""
     model_path = MODEL_PATH if MODEL_PATH.exists() else FALLBACK_MODEL_PATH
+    status = "healthy" if model is not None else "model_not_loaded"
+    logger.info(f"[Health] status={status}, model_loaded={model is not None}, classes={len(CATEGORY_NAMES)}")
     return HealthResponse(
-        status="healthy" if model is not None else "model_not_loaded",
+        status=status,
         model_loaded=model is not None,
         model_path=str(model_path),
         total_classes=len(CATEGORY_NAMES),
@@ -229,7 +197,10 @@ async def predict(
     Retorna lista de componentes detectados com bounding boxes
     e scores de confianca.
     """
+    logger.info(f"[Predict] Recebida imagem: {file.filename} (confidence>={confidence})")
+
     if model is None:
+        logger.error("[Predict] Modelo YOLO nao carregado — retornando 503")
         raise HTTPException(status_code=503, detail="Modelo YOLO nao carregado")
 
     # Ler imagem
@@ -292,8 +263,14 @@ async def predict(
     # Ordenar por confianca (maior primeiro)
     detections.sort(key=lambda d: d.confidence, reverse=True)
 
+    # Log deteccoes agrupadas por classe
+    class_counts = Counter(d.class_name for d in detections)
+    breakdown = ", ".join(f"{name}={count}" for name, count in class_counts.most_common())
+    logger.info(f"[Predict] Inferencia: {round(inference_time, 2)}ms | Imagem: {img_width}x{img_height}")
+    logger.info(f"[Predict] Deteccoes: {breakdown} | Total: {len(detections)}")
+
     return PredictionResponse(
-        model="architecture-detector-yolov8n-v2",
+        model="architecture-detector-yolov8s-v5",
         inference_time_ms=round(inference_time, 2),
         image_size={"width": img_width, "height": img_height},
         detections=detections,

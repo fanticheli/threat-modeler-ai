@@ -6,7 +6,7 @@ Guia passo a passo para rodar o Threat Modeler AI no seu ambiente local.
 
 ## Pre-requisitos
 
-- **Python 3.8+** (para o YOLO Service)
+- **Python 3.11+** (para o YOLO Service)
 - **Node.js 18+** (para Backend e Frontend)
 - **npm**
 - **Chave API da Anthropic** ([console.anthropic.com](https://console.anthropic.com/))
@@ -17,7 +17,7 @@ Guia passo a passo para rodar o Threat Modeler AI no seu ambiente local.
 
 ## Opcao 1 - Docker Compose (mais facil)
 
-Sobe YOLO + MongoDB + Redis + Backend de uma vez. So o frontend fica separado.
+Sobe **todos os 5 servicos** com um unico comando: YOLO Service + MongoDB + Redis + Backend + Frontend.
 
 ```bash
 # 1. Clone os 3 repos na mesma pasta
@@ -25,19 +25,12 @@ git clone https://github.com/fanticheli/threat-modeler-ai.git
 git clone https://github.com/fanticheli/threat-modeler-ai-backend.git
 git clone https://github.com/fanticheli/threat-modeler-ai-frontend.git
 
-# 2. Configure o backend
-cp threat-modeler-ai-backend/.env.example threat-modeler-ai-backend/.env
-# Edite threat-modeler-ai-backend/.env e adicione sua ANTHROPIC_API_KEY
-
-# 3. Suba YOLO + MongoDB + Redis + Backend
+# 2. Configure a API key
 cd threat-modeler-ai
-export ANTHROPIC_API_KEY=sk-ant-api03-SUA_CHAVE_AQUI
-docker-compose up -d
+echo "ANTHROPIC_API_KEY=sk-ant-api03-SUA_CHAVE_AQUI" > .env
 
-# 4. Suba o frontend
-cd ../threat-modeler-ai-frontend
-npm install
-npm run dev
+# 3. Suba todos os servicos
+docker compose up -d --build
 ```
 
 Acesse: http://localhost:8080
@@ -66,7 +59,7 @@ python -m uvicorn main:app --host 0.0.0.0 --port 8000
 
 Teste: http://localhost:8000/health deve retornar:
 ```json
-{"status":"healthy","model_loaded":true,"model_path":"...","total_classes":30}
+{"status":"healthy","model_loaded":true,"model_path":"...","total_classes":10}
 ```
 
 ### Passo 3 - Backend NestJS (porta 3001)
@@ -156,7 +149,7 @@ O sistema funciona normalmente. O backend detecta que o YOLO esta indisponivel e
 - **Upstash:** Verifique REDIS_PASSWORD e REDIS_TLS=true no .env
 
 ### YOLO Service nao carrega o modelo
-- Verifique se o arquivo `yolo-service/model/best.pt` existe (6.26 MB)
+- Verifique se o arquivo `yolo-service/model/best.pt` existe (~22 MB, YOLOv8s small v5)
 - Verifique se as dependencias foram instaladas: `pip install -r requirements.txt`
 
 ### Frontend nao conecta no backend

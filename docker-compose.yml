@@ -55,9 +55,25 @@ services:
       - MONGODB_URI=mongodb://mongodb:27017/threat-modeler
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+      - REDIS_PASSWORD=
+      - REDIS_TLS=false
       - YOLO_SERVICE_URL=http://yolo-service:8000
       - YOLO_TIMEOUT_MS=30000
       - PORT=3001
+    restart: unless-stopped
+
+  # ============================================
+  # Frontend React - Interface Web
+  # ============================================
+  frontend:
+    build:
+      context: ../threat-modeler-ai-frontend
+      args:
+        - VITE_API_URL=http://localhost:3001
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
     restart: unless-stopped
 
 volumes:

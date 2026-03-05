@@ -4,9 +4,10 @@
 Aceito
 
 ## Contexto
-A análise de uma imagem envolve múltiplas chamadas à API do Claude:
-1. Detecção de componentes (1 chamada)
-2. Análise STRIDE por componente (N chamadas)
+A analise de uma imagem envolve multiplas operacoes de IA:
+1. Deteccao de componentes via YOLO Service (~200ms) e Claude Vision (~5-10s) em paralelo
+2. Merge dos resultados (YOLO + Claude)
+3. Analise STRIDE por componente (N chamadas ao Claude)
 
 Isso pode levar de 30 segundos a vários minutos. Não podemos bloquear a request HTTP.
 
