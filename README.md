@@ -52,22 +52,22 @@ O Threat Modeler AI e uma ferramenta que permite:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     FRONTEND (React + Vite)                      │
-│             React + Vite + shadcn/ui + TailwindCSS               │
+│                     FRONTEND (React + Vite)                     │
+│             React + Vite + shadcn/ui + TailwindCSS              │
 └─────────────────────────────────────────────────────────────────┘
                                 │
                                 ▼ HTTP/REST + SSE
 ┌─────────────────────────────────────────────────────────────────┐
-│                           BACKEND                                │
-│                     NestJS + TypeScript                           │
+│                           BACKEND                               │
+│                     NestJS + TypeScript                         │
 │  ┌──────────────┐  ┌──────────────┐  ┌────────────────────────┐ │
 │  │   Upload     │  │  Analysis    │  │   Report Gen           │ │
 │  │   Module     │  │   Module     │  │   Module               │ │
 │  └──────────────┘  └──────────────┘  └────────────────────────┘ │
-│                          │                                       │
-│                          ▼                                       │
+│                          │                                      │
+│                          ▼                                      │
 │  ┌─────────────────────────────────────────────────────────────┐│
-│  │            AI Service (Pipeline Hibrido)                     ││
+│  │            AI Service (Pipeline Hibrido)                    ││
 │  │  ┌────────────────┐  ┌───────────────┐  ┌────────────────┐  ││
 │  │  │ YoloService    │  │ Claude Vision │  │ Merge + STRIDE │  ││
 │  │  │ (HTTP Client)  │  │ (Anthropic)   │  │ Analysis       │  ││
